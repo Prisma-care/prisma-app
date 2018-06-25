@@ -1,0 +1,28 @@
+// family
+
+.familymember {
+
+  @include media-breakpoint-down(md) {
+    .familymember-numstories { display: none !important; }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .familymember-email, .familymember-invite { margin-top: 1rem; }
+
+    .familymember-invite {
+      position: absolute;
+      top: 0;
+      justify-content: flex-end;
+      align-self: flex-start;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .familymember-invite { 
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+  }
+
+}

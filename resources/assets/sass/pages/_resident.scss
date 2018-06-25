@@ -1,0 +1,57 @@
+// Resident
+
+.resi-nav {
+  margin-bottom: 3rem;
+
+  .nav-link {
+    border-bottom: 1px solid $gray-200;
+    font-weight: 800;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid $blue;
+    color: $gray-800;
+  }
+
+  @include media-breakpoint-only(xs) {
+    font-size: .9rem;
+    .nav-link { 
+      font-weight: normal;
+      padding: 0.5rem .75rem;
+    }
+  }
+
+}
+
+.resi-header {
+  text-align: center;
+  margin-top: -5rem;
+
+  img { height: 100px; }
+
+  &-displayname { margin-top: .5rem; }
+  &-fullname {
+    margin: .5rem 0 2rem;
+    font-weight: 300;
+    color: $gray-500;
+    font-size: .8rem;
+    font-family: $font-family-sans-serif;
+  }
+
+  &-actions {
+    text-align: center; 
+    i {
+      font-size: 3rem;
+      color: $gray-500;
+      display: block;
+    }
+    a { color: $gray-500; }
+    a:hover {
+      text-decoration: none;
+      color: $gray-300;
+      i { color: $gray-300; }
+    }
+    span { clear: both; display: block; }
+  }
+}

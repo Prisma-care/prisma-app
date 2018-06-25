@@ -1,0 +1,1523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"first",
+				"firstrun"
+			],
+			[
+				"lastname",
+				"lastname"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"gray-",
+				"gray-200"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"gray",
+				"gray-500"
+			],
+			[
+				"ls",
+				"letter-spacing"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"Cons",
+				"console.log"
+			],
+			[
+				"tt",
+				"tt-n\ttext-transform: none;"
+			],
+			[
+				"End",
+				"endforeach"
+			],
+			[
+				"next",
+				"nextBand"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"brand-",
+				"brand-danger"
+			],
+			[
+				"ta",
+				"ta-l\ttext-align: left;"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"month",
+				"monthsPeter"
+			],
+			[
+				"act",
+				"activities"
+			],
+			[
+				"ac",
+				"activity"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"si",
+				"sizeof"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"border-rad",
+				"border-radius"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fw",
+				"fw-n\tfont-weight: normal;"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"cons",
+				"console.log"
+			],
+			[
+				"values",
+				"array_values"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bel",
+				"belgian_bands"
+			],
+			[
+				"text-",
+				"text-danger"
+			],
+			[
+				"gray-lig",
+				"gray-lightest"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"br",
+				"brusselsairlines"
+			],
+			[
+				"rgba",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"getCo",
+				"getCompanyName"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"be",
+				"bebble"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"gr",
+				"gray-light"
+			],
+			[
+				"ur",
+				"urlencode"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"language",
+				"LanguagePeer"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/assets/js/stories.js",
+			"settings":
+			{
+				"buffer_size": 2056,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1108,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 294.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"onide",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"lipsu",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ine",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"SIDE",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sidebr",
+				"View: Toggle Side Bar"
+			],
+			[
+				"die",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"idne",
+				"Indexing Status"
+			],
+			[
+				"oinde",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"blade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"isde",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"sude",
+				"Set Syntax: Rd (R Documentation)"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"material",
+				"Material Theme: Activate theme"
+			],
+			[
+				"mati",
+				"Material Theme: Activate theme"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ibde",
+				"Build: New Build System"
+			],
+			[
+				"ionde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"onde",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"installa ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"IONDE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"iunde",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"nide",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"sinde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indel",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"INDE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"synta php",
+				"Set Syntax: PHP"
+			],
+			[
+				"sie",
+				"Snippet: <?php if (…) ?> … <?php endif ?>"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"Side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"knde",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"lips",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lipsum",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"mimi",
+				"View: Toggle Minimap"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/frederikvincx/Code/anything",
+		"/Users/frederikvincx/Code/anything/app",
+		"/Users/frederikvincx/Code/anything/app/Http",
+		"/Users/frederikvincx/Code/anything/app/Http/Controllers",
+		"/Users/frederikvincx/Code/anything/resources",
+		"/Users/frederikvincx/Code/anything/resources/assets",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/layout",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/modules",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/pages",
+		"/Users/frederikvincx/Code/anything/resources/views",
+		"/Users/frederikvincx/Code/anything/resources/views/families",
+		"/Users/frederikvincx/Code/anything/resources/views/residents"
+	],
+	"file_history":
+	[
+		"/Users/frederikvincx/Code/anything/resources/views/layout.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/profile.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/app.scss",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/preferences.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/family.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/stories.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/_header.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/js/stories.js",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/_story.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/pages/_resident.scss",
+		"/Users/frederikvincx/Code/anything/routes/web.php",
+		"/Users/frederikvincx/Code/anything/app/Http/Controllers/ResidentsController.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/pages/_story.scss",
+		"/Users/frederikvincx/Code/anything/resources/views/_header.blade.php",
+		"/Users/frederikvincx/Code/anything/webpack.mix.js",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/_storyadd.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/layout/_header.scss",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/pages/_family.scss",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/index.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/assets/js/family.js",
+		"/Users/frederikvincx/Code/anything/resources/views/carehomes/create.blade.php",
+		"/Users/frederikvincx/Code/anything/node_modules/bootstrap/scss/_variables.scss",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/_variables.scss",
+		"/Users/frederikvincx/Code/anything/resources/assets/js/app.js",
+		"/Users/frederikvincx/Code/anything/resources/views/families/invite.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/preferences/index.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/carehomes/index.blade.php",
+		"/Users/frederikvincx/Code/anything/app/Http/Controllers/CarehomesController.php",
+		"/Users/frederikvincx/Code/anything/resources/views/carehomes/airtable.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/show.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/residents/_storyadd.blade",
+		"/Users/frederikvincx/Code/anything/resources/views/preferences/edit.blade.php",
+		"/Users/frederikvincx/Code/anything/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/header.blade.php",
+		"/Users/frederikvincx/Code/anything/public/mix-manifest.json",
+		"/Users/frederikvincx/Code/anything/resources/assets/sass/_resident.scss",
+		"/Users/frederikvincx/Code/anything/resources/views/_breadcrumb.blade.php",
+		"/Users/frederikvincx/Code/anything/resources/views/stories/index.blade.php",
+		"/Users/frederikvincx/Code/anything/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/simple-default.blade.php",
+		"/Users/frederikvincx/Code/anything/app/Http/Controllers/PreferencesController.php",
+		"/Users/frederikvincx/Code/anything/app/Http/Controllers/FamiliesController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/routes/web.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/bands/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/gigs/gigsbymonth.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/gigs/_gig.blade.php",
+		"/Users/frederikvincx/Desktop/prdeck/website/webroot/package.json",
+		"/Users/frederikvincx/Code/welkom-in-vlaanderen/docker-compose.yml",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/GigsController.php",
+		"/Users/frederikvincx/Code/mobile-app/src/environments/environment.ts",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/FinanceController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/gigs/gigsbyband.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/GigsController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/gigs/gigsbynew.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/finance/year.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/finance/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Auth/ForgotPasswordController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/HomepageController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/config/meta-tags.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/auth/login.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/contact.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_modules/_gig.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_no-modular/_pages.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/bands/show.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/video/embed.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/homepage.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/config/constants.php",
+		"/Users/frederikvincx/Code/peterverstraelen/vendor/nikic/php-parser/test/code/parser/scalar/constantString.test",
+		"/Users/frederikvincx/Code/peterverstraelen/config/database.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/bands/edit.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/bands/_form.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/_form.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Models/Gig.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/public.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/bands/create.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/BandsController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_layouts/_layout.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/layouts/public.blade.php",
+		"/Users/frederikvincx/Library/Caches/Cleanup At Startup/Transmit/7A164017-7076-45AD-B6E0-813894AA039E/index.html",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/BandsController.php",
+		"/Users/frederikvincx/Downloads/wetransfer-3e0b0a/MAKS vzw video 2 def.srt",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/layouts/admin.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/financeindex.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/AgentsController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/FinanceController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/js/app.js",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/AgenciesController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/vendor/backpack/base/layout.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/_agent.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/.env",
+		"/Users/frederikvincx/Code/peterverstraelen/.gitignore",
+		"/Users/frederikvincx/Downloads/captions.sbv",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_base/_variables.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/admin.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/bands/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/public/js/app.js",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/ActivitiesController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/edit.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/_table.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/notes/_panel.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agencies/edit.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/_agent.blade",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_modules/_band.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/videos/_panel.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/links/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/PhotosController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/LinksController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Admin/VideosController.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/_form.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agencies/index.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/public/js/all.js",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/create.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/assets/sass/_base/_mixins.scss",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/agents/edit.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Traits/ActivityOverview.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Models/Band.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/_list.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/_activitymini.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/_activity.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Models/Activity.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/auth/passwords/email.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/auth/passwords/reset.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/auth/register.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Kernel.php",
+		"/Users/frederikvincx/Code/peterverstraelen/resources/views/admin/gigs/create.blade.php",
+		"/Users/frederikvincx/Code/peterverstraelen/app/Http/Controllers/Auth/LoginController.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 161.0,
+		"where_history":
+		[
+			"/Users/frederikvincx/Code/anything/resources/views"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mr-2",
+			"mr-2\"",
+			"form-group",
+			"     </div>\n          \n            <div class=\"form-group\">     ",
+			"<div class=\"col-3\">",
+			":</label>",
+			"lastName",
+			"category",
+			"button",
+			"!important",
+			"button",
+			"block",
+			"toggler",
+			"button",
+			"familymember",
+			"print",
+			"\", \"",
+			"h3",
+			"}",
+			"\"]",
+			"]},",
+			"this.stories",
+			"grouped",
+			"b",
+			"showMediaPreview",
+			"button",
+			"‘’",
+			"et",
+			"this.items",
+			"loadItems",
+			"items",
+			"{{ ",
+			"h6",
+			"h5",
+			"modal",
+			"</a>",
+			"a href=\"#\"",
+			"itemClicked",
+			"addStoryModal",
+			"itemClicked",
+			"input",
+			"material",
+			"material-icons",
+			"justify-content-center ",
+			"btn-sm\"",
+			"h5",
+			"<h5",
+			"div",
+			"h2",
+			"h",
+			"material-icons text-muted",
+			"heading",
+			"800",
+			"grid",
+			"heading",
+			"print",
+			"container-fluid",
+			"div",
+			"firstName",
+			"gemeente",
+			"h3",
+			"h5",
+			"a {",
+			"a",
+			"collapsed",
+			"selected",
+			"users",
+			"checkedStories",
+			"selected",
+			"user",
+			"selected",
+			"users",
+			"checkedNames",
+			"Checked names",
+			"story",
+			"Ferron",
+			"gray-800",
+			"outline-secondary",
+			"tn-outline-secondary",
+			"container",
+			"padding",
+			"class=\"row\"",
+			"btn btn-outline-secondary",
+			"btn-default",
+			"Request::is",
+			"\">",
+			".show",
+			"h1",
+			"1",
+			"show",
+			"preferences",
+			"stories",
+			"        $",
+			"        ",
+			" #",
+			" ",
+			" !default;",
+			"500",
+			"</a>",
+			"<a",
+			"button",
+			"border",
+			"lead text-muted d-flex align-items-middle mt-4",
+			"head",
+			"mr-3",
+			"<h3 class=\"h5",
+			"<h3 class=\"h5 text-muted\">",
+			"h4 text",
+			"<h3>",
+			"show",
+			"h4",
+			"-xs-6",
+			"sm",
+			"show",
+			"first",
+			"residents",
+			"create",
+			"residents",
+			"show",
+			"residents",
+			"show",
+			"country"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"container",
+			"Feron"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/assets/js/stories.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								896
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 847.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 70.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "anything.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"stories js",
+				"resources/assets/js/stories.js"
+			],
+			[
+				"profile",
+				"resources/views/residents/profile.blade.php"
+			],
+			[
+				"layout",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"app scss",
+				"resources/assets/sass/app.scss"
+			],
+			[
+				"family",
+				"resources/views/residents/family.blade.php"
+			],
+			[
+				"prefere",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"family ",
+				"resources/views/residents/family.blade.php"
+			],
+			[
+				"stories",
+				"resources/assets/js/stories.js"
+			],
+			[
+				"stories bla",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"story sbla",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"lay",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"resident head",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"resident scss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"residen_header",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"stories scss",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"invite",
+				"resources/views/families/invite.blade.php"
+			],
+			[
+				"residentscontr",
+				"app/Http/Controllers/ResidentsController.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"story scss",
+				"resources/assets/sass/pages/_story.scss"
+			],
+			[
+				"resident _header",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"_header",
+				"resources/views/_header.blade.php"
+			],
+			[
+				"layout b",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"_story",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"fam blade",
+				"resources/views/residents/family.blade.php"
+			],
+			[
+				"layout ",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"story add",
+				"resources/views/residents/_storyadd.blade.php"
+			],
+			[
+				"header scss",
+				"resources/assets/sass/layout/_header.scss"
+			],
+			[
+				"_header bla",
+				"resources/views/_header.blade.php"
+			],
+			[
+				"family blade",
+				"resources/views/residents/family.blade.php"
+			],
+			[
+				"family scss",
+				"resources/assets/sass/pages/_family.scss"
+			],
+			[
+				"resident",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"preferen bla",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"residents scss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"residents index",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"variables scss",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"carehome create",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"storyadd",
+				"resources/views/residents/_storyadd.blade.php"
+			],
+			[
+				"header blade",
+				"resources/views/_header.blade.php"
+			],
+			[
+				"residen scss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"variable scss",
+				"resources/assets/sass/_variables.scss"
+			],
+			[
+				"variables node",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"story scs",
+				"resources/assets/sass/pages/_story.scss"
+			],
+			[
+				"prefer",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"app js",
+				"resources/assets/js/app.js"
+			],
+			[
+				"family j",
+				"resources/assets/js/family.js"
+			],
+			[
+				"famil",
+				"resources/views/families/invite.blade.php"
+			],
+			[
+				"story",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"stories ",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"resident scs",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"residents _hea",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"preferebla",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"variable",
+				"resources/assets/sass/_variables.scss"
+			],
+			[
+				"preferences bla",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"prefere inde",
+				"resources/views/preferences/index.blade.php"
+			],
+			[
+				"carehome inde",
+				"resources/views/carehomes/index.blade.php"
+			],
+			[
+				"resident index",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"residen head",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"pref blade",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"carehome cre",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carhome cre",
+				"app/Http/Controllers/CarehomesController.php"
+			],
+			[
+				"carehecrea",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carehe create",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carehome crea",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carehome ",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"stories bl",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"varia scss",
+				"resources/assets/sass/_variables.scss"
+			],
+			[
+				"variables",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"create bla",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carehomesco",
+				"app/Http/Controllers/CarehomesController.php"
+			],
+			[
+				"stories blade",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"residen _head",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"_storyadd",
+				"resources/views/residents/_storyadd.blade.php"
+			],
+			[
+				"resi _header",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"storybla",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"app scs",
+				"resources/assets/sass/app.scss"
+			],
+			[
+				"residenscss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"reside _he",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"create blade",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"carehome blade inde",
+				"resources/views/carehomes/index.blade.php"
+			],
+			[
+				"residen inde",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"resi scss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"carehome blade",
+				"resources/views/carehomes/create.blade.php"
+			],
+			[
+				"reside _head",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"carehome",
+				"resources/views/carehomes/index.blade.php"
+			],
+			[
+				"resident s",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"prefer bla",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"reside",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"reside stories",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"residen story bl",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"story blade",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"reside _hea",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"story bla",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"residens index blade",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"family bla",
+				"resources/views/residents/family.blade.php"
+			],
+			[
+				"resi _hed",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"resident stor",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"residen stor",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"layout blade",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"residents index bla",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"layout bla",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"resident header",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"layout bl",
+				"resources/views/layout.blade.php"
+			],
+			[
+				"variables scs",
+				"resources/assets/sass/_variables.scss"
+			],
+			[
+				"resident stor blade",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"resident storie",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"residen show",
+				"resources/views/residents/show.blade.php"
+			],
+			[
+				"residen index",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"index blade",
+				"resources/views/carehomes/index.blade.php"
+			],
+			[
+				"reside scss",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"residen story",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"_head",
+				"resources/assets/sass/layout/_header.scss"
+			],
+			[
+				"reside header bl",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"resid index bla",
+				"resources/views/residents/index.blade.php"
+			],
+			[
+				"care index bla",
+				"resources/views/carehomes/index.blade.php"
+			],
+			[
+				"resident blade",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"preferences",
+				"resources/views/residents/preferences.blade.php"
+			],
+			[
+				"residents story",
+				"resources/views/residents/_story.blade.php"
+			],
+			[
+				"pages reside",
+				"resources/assets/sass/pages/_resident.scss"
+			],
+			[
+				"layou theader",
+				"resources/assets/sass/layout/_header.scss"
+			],
+			[
+				"layout header",
+				"resources/assets/sass/layout/_header.scss"
+			],
+			[
+				"header ",
+				"vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/header.blade.php"
+			],
+			[
+				"reside head",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"header bla",
+				"resources/views/_header.blade.php"
+			],
+			[
+				"_header blade",
+				"resources/views/_header.blade.php"
+			],
+			[
+				"variables ",
+				"node_modules/bootstrap/scss/_variables.scss"
+			],
+			[
+				"resident storb",
+				"resources/views/residents/stories.blade.php"
+			],
+			[
+				"resi header",
+				"resources/views/residents/_header.blade.php"
+			],
+			[
+				"resi stories",
+				"resources/views/residents/stories.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": false,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,126 @@
+
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "layout/header";
+@import "pages/resident";
+@import "pages/story";
+@import "pages/family";
+@import 'vendor/blueimp-gallery';
+
+body {
+  border-top: 1rem solid $blue;
+}
+
+.lead { 
+  font-family: $font-family-sans-serif;
+  font-weight: 200;
+  color: $gray-500;
+
+  &-lg {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 2rem 0 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: .9rem;
+  margin-top: 1.25rem;
+  color: $gray-800;
+}
+.form-group { 
+  position: relative;
+  
+  input.form-control {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    padding-top: 1.75rem;
+    padding-bottom: .5rem;
+  }
+
+  label {
+    position: absolute;
+    top: .55rem;
+    left: .8rem;
+    max-height: 1rem;
+    margin: 0;
+    font-weight: 800;
+    font-size: .8rem;
+  }
+}
+
+a:hover { text-decoration: none; }
+a .card { transition: all .2s ease-in-out; }
+a:hover .card { box-shadow: 0px 4px 20px 0px rgba(84, 91, 110, .2); }
+
+.card { box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.075); }
+
+.pref {
+  &-item {
+    margin-top: 1rem;
+    &:hover {
+      .pref-item-rollover { opacity: 1; }
+    }
+    &-title {
+      text-align: right;
+      i { font-size: 3rem; color: $blue; }
+    }
+    &-rollover { opacity: 0; }
+
+    p { white-space: pre; }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .pref-item-title, .pref-item-rollover, .pref-item-edit, p, h2 { text-align: center; }
+    .pref-item-rollover, .pref-item-edit { opacity: 1; margin-bottom: 2.5rem;}
+  }
+}
+
+a.btn a.material-icons {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+footer {
+  background: $white;
+  padding: 0.75rem;
+  font-size: .8rem;
+  margin-top: 2rem;
+  color: $gray-600;
+
+  a { 
+    color: $gray-600;
+  }
+}
+
+
+#customFile .custom-file-control:lang(en)::after {
+  content: "Select file...";
+}
+
+#customFile .custom-file-control:lang(en)::before {
+  content: "Click me";
+}
+
+/*when a value is selected, this class removes the content */
+.custom-file-control.selected:lang(en)::after {
+  content: "" !important;
+}
+
+.custom-file {
+  overflow: hidden;
+}
+.custom-file-control {
+  white-space: nowrap;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

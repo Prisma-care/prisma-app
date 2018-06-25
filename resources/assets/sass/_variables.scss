@@ -1,0 +1,55 @@
+$enable-shadows:            true;
+
+// Typography
+$font-family-sans-serif:    -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+$headings-font-family:      -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+$headings-font-weight:      800;
+$font-size-base:            1rem;
+$line-height-base:          1.6;
+
+// Color system
+$white:                     #fff;
+$gray-100:                  #F4F4F4;
+$gray-200:                  #EDEDED;
+$gray-300:                  #CACCD1;
+$gray-400:                  #ABAEB4;
+$gray-500:                  #ABAEB4;
+$gray-600:                  #828A99;
+$gray-700:                  #545B6E;
+$gray-800:                  #363943;
+$gray-900:                  #21242C;
+$black:                     #000;
+
+$blue:                      #637DC8;
+$indigo:                    #6A56E1;
+$purple:                    #6f42c1;
+$pink:                      #D95DB4;
+$red:                       #F35A4B;
+$orange:                    #FF9F00;
+$yellow:                    #FAD820;
+$green:                     #5DE156;
+$teal:                      #56E1B7;
+$cyan:                      #56E1DD;
+
+// Body
+$body-bg:                   $white;
+$body-color:                $gray-600;
+$headings-color:            $gray-800;
+
+$input-border-color:        $gray-300;
+$input-placeholder-color:   $gray-300;
+
+$navbar-dark-color:         $gray-400;
+$navbar-dark-hover-color:   $gray-200;
+$navbar-dark-active-color:  $gray-400;
+
+$card-border-color:         $gray-200;
+
+// Grid
+$grid-gutter-width:           50px;
+
+
+$modal-backdrop-bg:                 $white;
+$modal-backdrop-opacity:            .7;
+$modal-content-box-shadow-sm-up:    0 .25rem .75rem rgba($gray-800, .3);
+

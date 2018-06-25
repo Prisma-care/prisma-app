@@ -1,0 +1,128 @@
+// Story
+
+#addStoryBtn {
+  position: fixed;
+  bottom: .75rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.story-actions {
+  background: white;
+  padding: .5rem 1rem;
+  box-shadow: 0 -2px 16px 0px rgba(54,57,67,0.33);
+}
+
+.story-category {
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $gray-200;
+
+  &:last-child { border: none; }
+
+  &-header {
+    text-align: center;
+  }
+
+  .card-columns { column-gap: 50px; }
+  
+  .card-img-overlay, .checkbox { transition: all .2s ease-in-out; }
+
+  .checkbox { opacity: 0; }
+  button {
+    color: white;
+    opacity: 0;
+    &:hover { text-decoration: none; }
+  }
+
+  .story.checked { 
+    .card { box-shadow: 0px 0px 0px 3px $blue; }
+    img { filter: saturate(0); }
+    .card-img-overlay { background: rgba(84,91,110,.8); }
+    .checkbox { opacity: 1; }
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.2);
+
+    &:hover {
+      img { filter: saturate(0); }
+      .card-img-overlay { background: rgba(84,91,110,.8); }
+      .checkbox, button { opacity: 0.8; text-decoration: none; }
+      button:hover { opacity: 1; color: white; }
+    }
+ }
+}
+
+.story-add {
+  margin-bottom: 2rem; 
+
+  &-photopreview, &-videoadd-preview {
+
+    margin-bottom: 1rem;
+    
+    &:hover {
+      img { filter: saturate(0); }
+      .card-img-overlay { background: rgba(84,91,110,.8); }
+      .close { opacity: 1; }
+    }
+    .card { width: 120px; }
+    .card-img-overlay, .close { transition: all .2s ease-out; }
+    .close { opacity: .2; }
+  }
+
+  textarea, textarea:focus {
+    margin-top: .5rem;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    line-height: 1.5rem;
+  }
+
+  &-media {
+    margin-top: 1rem;
+  }
+}
+
+
+/* Print styling */
+
+@media print {
+
+  @import url('https://fonts.googleapis.com/css?family=Kalam');
+
+  body { border-top: none !important; }
+
+  .card-img-overlay { display: none; }
+  .story-category { clear: both; }
+  
+  .story-category .story {
+    display: none;
+    width: 50%;
+    max-width: 50%;
+    float: left;
+    page-break-inside: avoid;
+    display: block;
+    &.checked {
+      img { filter: saturate(1); }
+      .checkbox { display: none; }
+    }
+    &.checked { box-shadow: none; }
+  }
+
+  .story-category-header h2 { 
+    display: none;
+  }
+  .row { display: block; }
+
+  p { 
+    margin-top: 1rem;
+    font-family: 'Kalam', cursive; 
+    color: black;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-top: .5rem;
+  }
+}
+

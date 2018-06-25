@@ -10,8 +10,8 @@
  * https://opensource.org/licenses/MIT
  */
 
-.blueimp-gallery,
-.blueimp-gallery > .slides > .slide > .slide-content {
+ .blueimp-gallery,
+ .blueimp-gallery > .slides > .slide > .slide-content {
   position: absolute;
   top: 0;
   right: 0;
@@ -32,8 +32,7 @@
   position: fixed;
   z-index: 999999;
   overflow: hidden;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.98);
+  background: $gray-900;
   opacity: 0;
   display: none;
   direction: ltr;
@@ -68,18 +67,18 @@
   height: 100%;
   text-align: center;
   -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-     -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-      -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-       -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .blueimp-gallery,
 .blueimp-gallery > .slides > .slide > .slide-content {
   -webkit-transition: opacity 0.2s linear;
-     -moz-transition: opacity 0.2s linear;
-      -ms-transition: opacity 0.2s linear;
-       -o-transition: opacity 0.2s linear;
-          transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .blueimp-gallery > .slides > .slide-loading {
   background: url(https://unpkg.com/blueimp-gallery@2.27.0/img/loading.gif) center no-repeat;
@@ -112,12 +111,12 @@
   // background: $gray-800;
   // background: rgba($gray-800, 0.5);
   -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   border: 2px solid $gray-700;
   -webkit-border-radius: 23px;
-     -moz-border-radius: 23px;
-          border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
   opacity: 0.5;
   cursor: pointer;
   display: none;
@@ -129,16 +128,25 @@
 .blueimp-gallery > .close,
 .blueimp-gallery > .title {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  margin: 0 40px 0 0;
-  font-size: 20px;
-  line-height: 30px;
   color: #fff;
-  opacity: 0.8;
   display: none;
 }
+.blueimp-gallery > .title {
+  opacity: 1;
+  text-shadow: 1px 1px $gray-900;
+  background: linear-gradient(rgba($gray-900, 0), rgba($gray-900, .7));
+  bottom: 0;
+  padding-bottom: 1.25rem;
+  padding-top: .5rem;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .blueimp-gallery > .close {
+  opacity: 0.8;
+  text-shadow: none;
+  top: 15px;
   padding: 15px;
   right: 15px;
   left: auto;
@@ -177,10 +185,10 @@
   display: block;
   /* Fix z-index issues (controls behind slide element) on Android: */
   -webkit-transform: translateZ(0);
-     -moz-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-       -o-transform: translateZ(0);
-          transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .blueimp-gallery-single > .prev,
 .blueimp-gallery-left > .prev,
@@ -195,10 +203,10 @@
 .blueimp-gallery > .close,
 .blueimp-gallery > .play-pause {
   -webkit-user-select: none;
-   -khtml-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Replace PNGs with SVGs for capable browsers (excluding IE<9) */

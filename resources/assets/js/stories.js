@@ -11,7 +11,7 @@ var vm2 = new Vue({
     newStory: '',
     newAlbum: '',
     youtubeUrl: '',
-    imagesLarge: [],
+    gallery: [],
     index: null
   },
   mounted: function(){
@@ -50,7 +50,7 @@ methods: {
       var app_key = "keyuzHdBFw9QQKZCC";
       this.stories = [];
       this.albums = [];
-      this.imagesLarge = [];
+      this.gallery = [];
       axios.get(
         "https://api.airtable.com/v0/"+app_id+"/story?view=Feron",
         { 
@@ -81,10 +81,17 @@ methods: {
             }
           });
 
-          // Create array with all the images for the slideshow
-          self.stories.forEach((story) => {
-            self.imagesLarge.push(story.fields.Attachments[0].thumbnails.large.url);
-          });
+          var i;
+          for (i = 0; i < self.stories.length; i++) {
+            console.log(self.stories[i].fields.Attachments[0].thumbnails.large.url);
+            console.log(self.stories[i].fields.Notes);
+
+            var slide = { };
+            slide.title = self.stories[i].fields.Notes;
+            slide.href = self.stories[i].fields.Attachments[0].thumbnails.large.url;
+            slide.type = 'image/jpeg';
+            self.gallery.push(slide);
+          }
 
         }).catch(function(error){
           console.log(error)

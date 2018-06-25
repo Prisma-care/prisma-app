@@ -5,7 +5,7 @@
 @include('residents/_header')
 
 <div id="app">
-  <gallery :images="imagesLarge" :index="index" @close="index = null"></gallery>
+  <gallery :images="gallery" :index="index" @close="index = null"></gallery>
 </div>
 
 <div class="container">

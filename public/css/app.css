@@ -10948,9 +10948,9 @@ nav.navbar .dropdown-toggle {
   text-align: center;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  border: 2px solid #545B6E;
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 23px;
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
   display: none;
 }
@@ -10973,11 +10973,18 @@ nav.navbar .dropdown-toggle {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 36, 44, 0)), to(rgba(33, 36, 44, 0.7)));
   background: linear-gradient(rgba(33, 36, 44, 0), rgba(33, 36, 44, 0.7));
   bottom: 0;
-  padding-bottom: 1.25rem;
-  padding-top: .5rem;
+  padding: 1.25rem 1rem 1rem;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .blueimp-gallery > .title {
+    font-size: 1rem;
+  }
 }
 
 .blueimp-gallery > .close {

@@ -5,7 +5,12 @@
 @include('residents/_header')
 
 <div id="app">
-  <gallery :images="gallery" :index="index" @close="index = null"></gallery>
+  <gallery
+  :images="gallery" 
+  :index="index"
+  :options="{youTubePlayerVars: undefined, youTubeClickToPlay: false}"
+  @close="index = null">
+</gallery>
 </div>
 
 <div class="container">
@@ -120,5 +125,9 @@ v-if="checkedStories.length > 0 || showStoryActions == true">
 <script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery.js"></script> 
 <script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-fullscreen.js"></script> 
 <script type="text/javascript" src="https://unpkg.com/vue-gallery"></script>
+<script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-youtube.js"></script>
+<script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-video.js"></script>
 <script type="text/javascript" src="/js/stories.js"></script>
-@endsection
+
+
+  @endsection

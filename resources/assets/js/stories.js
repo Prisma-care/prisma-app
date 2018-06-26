@@ -98,25 +98,34 @@ methods: {
             }
           });
 
-          // Prep the gallery
-          var i;
-          for (i = 0; i < self.stories.length; i++) {
-            var slide = { };
-            slide.title = self.stories[i].fields.Notes;
-            
-            if(self.stories[i].fields.Youtube){
-              // It's a video
-              slide.href = 'https://www.youtube.com/watch?v='+self.stories[i].fields.Youtube;
-              slide.type = 'text/html';
-              slide.youtube = self.stories[i].fields.Youtube;
-              slide.poster = 'https://img.youtube.com/vi/'+self.stories[i].fields.Youtube+'/maxresdefault.jpg';
-            } else {
-              // It's a photo
-              slide.href = self.stories[i].fields.Attachments[0].thumbnails.large.url;
-              slide.type = 'image/jpeg';
+          // Create the gallery from the albums
+          Object.keys(self.albums).forEach((album) => {
+
+            var i;
+            for (i = 0; i < self.albums[album].length; i++) {
+              var slide = { };
+              slide.title = self.albums[album][i].fields.Notes;
+              
+              if(self.albums[album][i].fields.type=="youtube"){
+                slide.href = 'https://www.youtube.com/watch?v='+self.albums[album][i].fields.Youtube;
+                slide.type = 'text/html';
+                slide.youtube = self.albums[album][i].fields.Youtube;
+                slide.poster = 'https://img.youtube.com/vi/'+self.albums[album][i].fields.Youtube+'/maxresdefault.jpg';
+              }
+
+              if(self.albums[album][i].fields.type=="image"){
+                slide.href = self.albums[album][i].fields.Attachments[0].thumbnails.large.url;
+                slide.type = 'image/jpeg';
+              }
+
+              if(self.albums[album][i].fields.type=="text"){
+                slide.href = "http://anything.test/img/tmp/profile_5.jpg";
+                slide.type = 'image/jpeg';
+              }
+
+              self.gallery.push(slide);
             }
-            self.gallery.push(slide);
-          }
+          });
 
         }).catch(function(error){
           console.log(error)

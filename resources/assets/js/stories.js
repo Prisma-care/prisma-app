@@ -119,7 +119,7 @@ methods: {
               }
 
               if(self.albums[album][i].fields.type=="text"){
-                slide.href = "http://anything.test/img/tmp/profile_5.jpg";
+                slide.href = "http://anything.test/img/tmp/feronback.jpg";
                 slide.type = 'image/jpeg';
               }
 

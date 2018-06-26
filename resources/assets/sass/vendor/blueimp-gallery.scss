@@ -136,11 +136,11 @@
   text-shadow: 1px 1px $gray-900;
   background: linear-gradient(rgba($gray-900, 0), rgba($gray-900, .7));
   bottom: 0;
-  padding: 1.25rem 1rem 1rem;
+  padding: 1.25rem 1rem 2rem;
   margin-bottom: 0;
   width: 100%;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-size: 1.5rem;
 }
 
@@ -254,7 +254,7 @@ body:last-child .blueimp-gallery-playing > .play-pause {
  * https://opensource.org/licenses/MIT
  */
 
-.blueimp-gallery > .slides > .slide > .video-content > img {
+ .blueimp-gallery > .slides > .slide > .video-content > img {
   position: absolute;
   top: 0;
   right: 0;

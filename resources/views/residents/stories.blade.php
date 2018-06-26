@@ -21,6 +21,9 @@ class="container">
 
     {{-- Add stories --}}
     @include('residents/_storyadd')
+    
+    {{-- Edit stories --}}
+    @include('residents/_storyedit')
 
     <button 
     v-on:click="isAddStoryVisible = true" 

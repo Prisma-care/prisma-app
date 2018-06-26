@@ -133,7 +133,6 @@ methods: {
       },
 
       showMediaPreview: function(mediaType) {
-        console.log(mediaType)
         this.previewType = mediaType;
       },
 

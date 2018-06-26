@@ -10641,6 +10641,21 @@ nav.navbar .dropdown-toggle {
   text-decoration: none;
 }
 
+.story-category .btn-edit {
+  position: absolute;
+  bottom: .75rem;
+}
+
+.story-category .btn-edit span {
+  opacity: 0;
+  display: inline-block;
+  padding-left: .25rem;
+}
+
+.story-category .btn-edit:hover span {
+  opacity: 1;
+}
+
 .story-category .story.checked .card {
   -webkit-box-shadow: 0px 0px 0px 3px #637DC8;
           box-shadow: 0px 0px 0px 3px #637DC8;

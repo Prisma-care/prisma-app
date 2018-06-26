@@ -209,7 +209,6 @@ var vm2 = new Vue({
     },
 
     showMediaPreview: function showMediaPreview(mediaType) {
-      console.log(mediaType);
       this.previewType = mediaType;
     },
 

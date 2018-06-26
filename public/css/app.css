@@ -10665,6 +10665,19 @@ nav.navbar .dropdown-toggle {
           box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.2);
 }
 
+.story-category .card .btn-zoom {
+  position: absolute;
+  top: 50%;
+  margin-top: -4rem;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.story-category .card .btn-zoom i {
+  margin: 2rem;
+}
+
 .story-category .card:hover img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
@@ -10688,6 +10701,10 @@ nav.navbar .dropdown-toggle {
 
 .story-category .card.card_text {
   border: 1px solid #EDEDED;
+}
+
+.story-category .card .card-img-overlay {
+  padding: .75rem 1.25rem 1.25rem;
 }
 
 .story-category .card .card-body {

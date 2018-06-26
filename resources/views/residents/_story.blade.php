@@ -4,12 +4,15 @@ class="card">
 
   <img class="card-img" :src="story['fields']['thumbnail']" alt="" v-if="story['fields']['thumbnail']">
   <div class="card-img-overlay">
+    <div class="d-flex justify-content-between align-items-center">
     <input type="checkbox" :id="story.id" :value="story.id" v-model="checkedStories" class="checkbox" number>
+    <button class="btn btn-link btn-sm px-0">Bewerk</button>
+    </div>
 
     <button
     @click="index = story['fields']['index']"
-    class="d-flex mx-auto mt-5 btn btn-link" >
-    <i class="material-icons md-48">zoom_in</i>
+    class="btn-zoom d-flex mx-auto btn btn-link" >
+    <i class="material-icons md-48 mx-auto">zoom_in</i>
   </button>
 
 </div>

@@ -133,6 +133,7 @@ var vm2 = new Vue({
         headers: { Authorization: "Bearer " + app_key }
       }).then(function (response) {
         self.stories = response.data.records;
+        // self.stories = [];
 
         // prep story thumbnails based on content type: youtube vs img
         self.stories.forEach(function (story) {

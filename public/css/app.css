@@ -11181,6 +11181,10 @@ body:last-child .blueimp-gallery > .slides > .slide > .video-content:not(.video-
   margin-left: -64px;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   border-top: 1rem solid #637DC8;
 }

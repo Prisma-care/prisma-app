@@ -10,7 +10,7 @@
   :index="index"
   :options="{youTubePlayerVars: undefined, youTubeClickToPlay: false}"
   @close="index = null">
-</gallery>
+  </gallery>
 </div>
 
 <div class="container">
@@ -31,11 +31,41 @@
     <i class="material-icons">add</i>Verhaal toevoegen
   </button>
 
-  {{-- Msg when no stories yet --}}
+
+  {{-- Album overview --}}
 
   <div 
-  v-if="stories.length==0" 
-  class="text-center d-print-none row">
+  v-for="(albumstories, album) in albums" 
+  v-cloak
+  v-if="stories.length>0">
+
+  {{-- Stories --}}
+
+    <div class="story-category">
+      <div class="story-category-header">
+        <h2>@{{ album }} </h2>
+      </div>
+
+      <div class="row">
+        <div 
+        v-for="story in albumstories" 
+        class="story col-md-6 col-lg-4 d-print-none" 
+        v-bind:class="{checked: checkedStories.includes(story.id), 'd-print-block': checkedStories.includes(story.id)}">
+
+        @include('residents/_story')
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{{-- Content when no stories yet --}}
+
+<div 
+v-if="stories.length==0"
+v-cloak
+class="text-center d-print-none row">
 
   <div class="col-md-8 mx-auto">
 
@@ -49,43 +79,20 @@
     class="btn btn-primary btn-circle d-flex justify-content-center align-items-center mb-1 d-print-none mx-auto" 
     autofocus>
     <i class="material-icons">add</i>Verhaal toevoegen
-  </button>
+    </button>
 
-  {{--         <a href="https://prisma.care/levensverhaal-posters/"><img src="https://prisma.care/wp-content/uploads/2018/05/prisma-poster-maken-pelgrims.jpg" alt="Poster maken" class="img-thumbnail"></a> --}}
+    {{--         <a href="https://prisma.care/levensverhaal-posters/"><img src="https://prisma.care/wp-content/uploads/2018/05/prisma-poster-maken-pelgrims.jpg" alt="Poster maken" class="img-thumbnail"></a> --}}
 
-  {{-- <a href="https://prisma.care/levensverhaal-posters/">Hoe maak je een poster?</a> --}}
+    {{-- <a href="https://prisma.care/levensverhaal-posters/">Hoe maak je een poster?</a> --}}
 
-  <hr class="mt-4">
-  <h2 class="mb-3">Hulp van je familie</h2>
-  <p>Wie heeft er nog foto's van Charles, en kan de verhalen aanvullen? </p>
-  <p><a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a></p>
+    <hr class="mt-4">
+    <h2 class="mb-3">Hulp van je familie</h2>
+    <p>Wie heeft er nog foto's van Charles, en kan de verhalen aanvullen? </p>
+    <p><a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a></p>
 
-</div>
+  </div>
 </div>    
 
-
-<div 
-v-for="(albumstories, album) in albums" 
-v-if="stories.length>0">
-
-{{-- Stories --}}
-
-<div class="story-category">
-  <div class="story-category-header">
-    <h2>@{{ album }} </h2>
-  </div>
-
-  <div class="row">
-    <div 
-    v-for="story in albumstories" 
-    class="story col-md-6 col-lg-4 d-print-none" 
-    v-bind:class="{checked: checkedStories.includes(story.id), 'd-print-block': checkedStories.includes(story.id)}">
-
-    @include('residents/_story')
-
-  </div>
-</div>
-</div>
 
 </div>
 
@@ -130,4 +137,4 @@ v-if="checkedStories.length > 0 || showStoryActions == true">
 <script type="text/javascript" src="/js/stories.js"></script>
 
 
-  @endsection
+@endsection

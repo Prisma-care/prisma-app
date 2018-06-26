@@ -58,6 +58,7 @@ methods: {
         }
         ).then(function(response){
           self.stories = response.data.records;
+          // self.stories = [];
 
           // prep story thumbnails based on content type: youtube vs img
           self.stories.forEach((story) => {

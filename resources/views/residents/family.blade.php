@@ -4,7 +4,10 @@
 
 @include('residents/_header')
 
-<div id="root" class="container pt-1">
+<div
+id="root"
+v-cloak
+class="container pt-1">
   <ul v-for="familyMember in familyMembers" class="list-unstyled" v-if="!showAddFamily && !firstrun">
 
     <li class="card familymember mb-3 pb-3 pt-3">

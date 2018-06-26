@@ -7,6 +7,8 @@
 @import "pages/family";
 @import 'vendor/blueimp-gallery';
 
+[v-cloak] { display: none }
+
 body {
   border-top: 1rem solid $blue;
 }

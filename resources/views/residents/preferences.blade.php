@@ -4,7 +4,9 @@
 
 @include('residents/_header')
 
-<div class="container">
+<div 
+v-cloak
+class="container">
 
   <p class="lead lead-lg text-center mt-0 mb-4" v-if="firstrun">Wat is belangrijk voor Charles?</p>
 

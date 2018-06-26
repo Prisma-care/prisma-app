@@ -134,6 +134,11 @@ var vm2 = new Vue({
       }).then(function (response) {
         self.stories = response.data.records;
 
+        // prep story thumbnails based on content type: youtube vs img
+        self.stories.forEach(function (story) {
+          if (story.fields.Youtube) story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';else story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
+        });
+
         // Group stories in albums
         self.albums = self.stories.reduce(function (acc, albumData) {
           acc[albumData.fields.Album] = acc[albumData.fields.Album] || [];
@@ -148,25 +153,33 @@ var vm2 = new Vue({
           });
         });
 
+        // Add gallery index to album stories to be able to open the right gallery item
         var currentIndex = 0;
         Object.keys(self.albums).forEach(function (album) {
           var i;
           for (i = 0; i < self.albums[album].length; i++) {
             self.albums[album][i].fields.index = currentIndex;
-            console.log(currentIndex + " ");
             currentIndex++;
           }
         });
 
+        // Prep the gallery
         var i;
         for (i = 0; i < self.stories.length; i++) {
-          console.log(self.stories[i].fields.Attachments[0].thumbnails.large.url);
-          console.log(self.stories[i].fields.Notes);
-
           var slide = {};
           slide.title = self.stories[i].fields.Notes;
-          slide.href = self.stories[i].fields.Attachments[0].thumbnails.large.url;
-          slide.type = 'image/jpeg';
+
+          if (self.stories[i].fields.Youtube) {
+            // It's a video
+            slide.href = 'https://www.youtube.com/watch?v=' + self.stories[i].fields.Youtube;
+            slide.type = 'text/html';
+            slide.youtube = self.stories[i].fields.Youtube;
+            slide.poster = 'https://img.youtube.com/vi/' + self.stories[i].fields.Youtube + '/maxresdefault.jpg';
+          } else {
+            // It's a photo
+            slide.href = self.stories[i].fields.Attachments[0].thumbnails.large.url;
+            slide.type = 'image/jpeg';
+          }
           self.gallery.push(slide);
         }
       }).catch(function (error) {

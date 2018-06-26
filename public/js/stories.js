@@ -135,9 +135,20 @@ var vm2 = new Vue({
         self.stories = response.data.records;
         // self.stories = [];
 
-        // prep story thumbnails based on content type: youtube vs img
+        // check story types
         self.stories.forEach(function (story) {
-          if (story.fields.Youtube) story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';else story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
+          // prep story thumbnails based on content type: youtube vs img
+          if (story.fields.Youtube || story.fields.Attachments) {
+            if (story.fields.Youtube) {
+              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';
+              story.fields.type = 'youtube';
+            } else {
+              story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
+              story.fields.type = 'image';
+            }
+          } else {
+            story.fields.type = 'text';
+          }
         });
 
         // Group stories in albums

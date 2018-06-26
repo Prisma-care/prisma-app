@@ -13,7 +13,9 @@
   </gallery>
 </div>
 
-<div class="container">
+<div 
+v-cloak
+class="container">
 
   <div class="story-container">
 
@@ -36,7 +38,6 @@
 
   <div 
   v-for="(albumstories, album) in albums" 
-  v-cloak
   v-if="stories.length>0">
 
   {{-- Stories --}}

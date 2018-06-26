@@ -10672,6 +10672,7 @@ nav.navbar .dropdown-toggle {
 
 .story-category .card:hover .card-img-overlay {
   background: rgba(84, 91, 110, 0.8);
+  border-radius: 0.25rem;
 }
 
 .story-category .card:hover .checkbox,
@@ -10683,6 +10684,16 @@ nav.navbar .dropdown-toggle {
 .story-category .card:hover button:hover {
   opacity: 1;
   color: white;
+}
+
+.story-category .card.card_text {
+  border: 1px solid #EDEDED;
+}
+
+.story-category .card .card-body {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 .story-add {

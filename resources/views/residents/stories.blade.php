@@ -8,7 +8,7 @@
   <gallery
   :images="gallery" 
   :index="index"
-  :options="{youTubePlayerVars: undefined, youTubeClickToPlay: false}"
+  :options="{youTubePlayerVars: { showinfo: 0, rel: 0, autoplay: 1, modestbranding: 1 }, youTubeClickToPlay: false}"
   @close="index = null">
   </gallery>
 </div>

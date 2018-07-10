@@ -1,4 +1,3 @@
-
 var vm2 = new Vue({
   el: 'main',
   data: {
@@ -14,36 +13,37 @@ var vm2 = new Vue({
     gallery: [],
     index: null
   },
-  mounted: function(){
-   this.loadStories(); 
- },
- components: {
-  'gallery': VueGallery
-},
-computed: {
-  selectAll: {
-    get: function () {
-      return this.stories ? this.checkedStories.length == this.stories.length : false;
-    },
-    set: function (value) {
-      var checkedStories = [];
+  mounted: function () {
+    this.loadStories();
+  },
+  components: {
+    'gallery': VueGallery
+  },
+  computed: {
+    selectAll: {
+      get: function () {
+        return this.stories ? this.checkedStories.length == this.stories.length : false;
+      },
+      set: function (value) {
+        var checkedStories = [];
 
-      if (value) {
-        console.log(this.stories);
-        this.stories.forEach((story) => {
-          checkedStories.push(story.id);
-        });
+        if (value) {
+          console.log(this.stories);
+          this.stories.forEach((story) => {
+            checkedStories.push(story.id);
+          });
+        }
+
+        this.checkedStories = checkedStories;
       }
-
-      this.checkedStories = checkedStories;
+    },
+    isValid() {
+      return (this.newStory != '' && this.newAlbum != '') ? false : 'disabled';
     }
   },
-  isValid() {
-    return (this.newStory != '' && this.newAlbum != '') ? false : 'disabled';
-  }
-},
-methods: {
-  loadStories: function(){
+  methods: {
+
+    loadStories: function () {
       // Init variables
       var self = this;
       var app_id = "appzWizY3DXnCjpgh";
@@ -51,97 +51,100 @@ methods: {
       this.stories = [];
       this.albums = [];
       this.gallery = [];
+      let params = new URLSearchParams(document.location);
+      console.log(params.get("name"));
       axios.get(
-        "https://api.airtable.com/v0/"+app_id+"/story?view=Feron",
-        { 
-          headers: { Authorization: "Bearer "+app_key } 
+        "https://api.airtable.com/v0/" + app_id + "/story?view=Feron", {
+          headers: {
+            Authorization: "Bearer " + app_key
+          }
         }
-        ).then(function(response){
-          self.stories = response.data.records;
-          // self.stories = [];
-
-          // check story types
-          self.stories.forEach((story) => {
-            // prep story thumbnails based on content type: youtube vs img
-            if(story.fields.Youtube || story.fields.Attachments) { 
-              if(story.fields.Youtube) {
-                story.fields.thumbnail = 'https://img.youtube.com/vi/'+story.fields.Youtube+'/maxresdefault.jpg';
-                story.fields.type = 'youtube';
-              } else {
-                story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
-                story.fields.type = 'image';
-              }
+      ).then(function (response) {
+        self.stories = response.data.records;
+        // self.stories = [];
+        const url = window.location.href;
+        // check story types
+        self.stories.forEach((story) => {
+          // prep story thumbnails based on content type: youtube vs img
+          if (story.fields.Youtube || story.fields.Attachments) {
+            if (story.fields.Youtube) {
+              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';
+              story.fields.type = 'youtube';
             } else {
-              story.fields.type = 'text';
+              story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
+              story.fields.type = 'image';
             }
-          });
+          } else {
+            story.fields.type = 'text';
+          }
+        });
 
-          // Group stories in albums
-          self.albums = self.stories.reduce((acc, albumData) => {
-            acc[albumData.fields.Album] = acc[albumData.fields.Album] || [];
-            acc[albumData.fields.Album].push(albumData);
-            return acc;
-          }, {});
+        // Group stories in albums
+        self.albums = self.stories.reduce((acc, albumData) => {
+          acc[albumData.fields.Album] = acc[albumData.fields.Album] || [];
+          acc[albumData.fields.Album].push(albumData);
+          return acc;
+        }, {});
 
-          // Sort stories in albums by createdTime
-          Object.keys(self.albums).forEach((album) => {
-            self.albums[album].sort((album1, album2) => album1.createdTime > album2.createdTime)
-          });
+        // Sort stories in albums by createdTime
+        Object.keys(self.albums).forEach((album) => {
+          self.albums[album].sort((album1, album2) => album1.createdTime > album2.createdTime)
+        });
 
-          // Add gallery index to album stories to be able to open the right gallery item
-          var currentIndex = 0;
-          Object.keys(self.albums).forEach((album) => {
-            var i;
-            for (i = 0; i < self.albums[album].length; i++) {
-              self.albums[album][i].fields.index = currentIndex;
-              currentIndex++;
+        // Add gallery index to album stories to be able to open the right gallery item
+        var currentIndex = 0;
+        Object.keys(self.albums).forEach((album) => {
+          var i;
+          for (i = 0; i < self.albums[album].length; i++) {
+            self.albums[album][i].fields.index = currentIndex;
+            currentIndex++;
+          }
+        });
+
+        // Create the gallery from the albums
+        Object.keys(self.albums).forEach((album) => {
+
+          var i;
+          for (i = 0; i < self.albums[album].length; i++) {
+            var slide = {};
+            slide.title = self.albums[album][i].fields.Notes;
+
+            if (self.albums[album][i].fields.type == "youtube") {
+              slide.href = 'https://www.youtube.com/watch?v=' + self.albums[album][i].fields.Youtube;
+              slide.type = 'text/html';
+              slide.youtube = self.albums[album][i].fields.Youtube;
+              slide.poster = 'https://img.youtube.com/vi/' + self.albums[album][i].fields.Youtube + '/maxresdefault.jpg';
             }
-          });
 
-          // Create the gallery from the albums
-          Object.keys(self.albums).forEach((album) => {
-
-            var i;
-            for (i = 0; i < self.albums[album].length; i++) {
-              var slide = { };
-              slide.title = self.albums[album][i].fields.Notes;
-              
-              if(self.albums[album][i].fields.type=="youtube"){
-                slide.href = 'https://www.youtube.com/watch?v='+self.albums[album][i].fields.Youtube;
-                slide.type = 'text/html';
-                slide.youtube = self.albums[album][i].fields.Youtube;
-                slide.poster = 'https://img.youtube.com/vi/'+self.albums[album][i].fields.Youtube+'/maxresdefault.jpg';
-              }
-
-              if(self.albums[album][i].fields.type=="image"){
-                slide.href = self.albums[album][i].fields.Attachments[0].thumbnails.large.url;
-                slide.type = 'image/jpeg';
-              }
-
-              if(self.albums[album][i].fields.type=="text"){
-                slide.href = "http://anything.test/img/tmp/feronback.jpg";
-                slide.type = 'image/jpeg';
-              }
-
-              self.gallery.push(slide);
+            if (self.albums[album][i].fields.type == "image") {
+              slide.href = self.albums[album][i].fields.Attachments[0].thumbnails.large.url;
+              slide.type = 'image/jpeg';
             }
-          });
 
-        }).catch(function(error){
-          console.log(error)
-        })
-      },
+            if (self.albums[album][i].fields.type == "text") {
+              slide.href = "http://anything.test/img/tmp/feronback.jpg";
+              slide.type = 'image/jpeg';
+            }
 
-      showMediaPreview: function(mediaType) {
-        this.previewType = mediaType;
-      },
+            self.gallery.push(slide);
+          }
+        });
 
-      addYoutube() {
-        this.videoAdded = true;
-      },
+      }).catch(function (error) {
+        console.log(error)
+      })
+    },
 
-      hideMedia() {
-        this.previewType = false;
-      }
+    showMediaPreview: function (mediaType) {
+      this.previewType = mediaType;
+    },
+
+    addYoutube() {
+      this.videoAdded = true;
+    },
+
+    hideMedia() {
+      this.previewType = false;
     }
-  });
+  }
+});

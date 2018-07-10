@@ -139,6 +139,4 @@ v-if="checkedStories.length > 0 || showStoryActions == true">
 <script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-youtube.js"></script>
 <script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-video.js"></script>
 <script type="text/javascript" src="/js/stories.js"></script>
-
-
 @endsection

@@ -76,7 +76,6 @@ module.exports = __webpack_require__(47);
 /***/ 47:
 /***/ (function(module, exports) {
 
-
 var vm2 = new Vue({
   el: 'main',
   data: {
@@ -121,6 +120,7 @@ var vm2 = new Vue({
     }
   },
   methods: {
+
     loadStories: function loadStories() {
       // Init variables
       var self = this;
@@ -129,12 +129,16 @@ var vm2 = new Vue({
       this.stories = [];
       this.albums = [];
       this.gallery = [];
+      var params = new URLSearchParams(document.location);
+      console.log(params.get("name"));
       axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=Feron", {
-        headers: { Authorization: "Bearer " + app_key }
+        headers: {
+          Authorization: "Bearer " + app_key
+        }
       }).then(function (response) {
         self.stories = response.data.records;
         // self.stories = [];
-
+        var url = window.location.href;
         // check story types
         self.stories.forEach(function (story) {
           // prep story thumbnails based on content type: youtube vs img

@@ -20,10 +20,16 @@ Route::get('/airtable', ['as' => 'airtable', 'uses' => 'CarehomesController@airt
 Route::get('/residents', ['as' => 'residents.index', 'uses' => 'ResidentsController@index']);
 Route::get('residents/show', ['as' => 'residents.show', 'uses' => 'ResidentsController@show']);
 Route::get('residents/create', ['as' => 'residents.create', 'uses' => 'ResidentsController@create']);
-Route::get('residents/1/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+//Route::get('residents/1/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 Route::get('residents/1/preferences', ['as' => 'residents.preferences', 'uses' => 'ResidentsController@preferences']);
 Route::get('residents/1/family', ['as' => 'residents.family', 'uses' => 'ResidentsController@family']);
 Route::get('residents/1/profile/edit', ['as' => 'residents.profile.edit', 'uses' => 'ResidentsController@edit']);
+Route::get('residents/feron/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/MarieJoseeMertens/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/RoseMarieDrouet/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/GeorgetteVeekmans/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/name=EricEngelen/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+//Route::get('residents/{name}/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 
 
 // families

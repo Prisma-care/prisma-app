@@ -17,3 +17,10 @@ It's as simple as that:
 git clone https://github.com/Prisma/prisma-app
 php artisan serve
 ```
+## Contributions
+
+Before making any contribution look at the
+[CONTRIBUTING](https://github.com/Prisma/prisma-app/blob/master/CONTRIBUTING.md)
+file. Also, feel free to submit your bugs and suggestions by opening
+an issue in the [issue tracker](https://github.com/Prisma/prisma-app/issues),
+it would help us a lot.

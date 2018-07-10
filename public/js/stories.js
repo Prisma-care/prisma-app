@@ -129,9 +129,19 @@ var vm2 = new Vue({
       this.stories = [];
       this.albums = [];
       this.gallery = [];
-      var params = new URLSearchParams(document.location);
-      console.log(params.get("name"));
-      axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=Feron", {
+      var apiUrl = "";
+      if (window.location.href === "http://localhost:8000/residents/EricEngelen/stories") {
+        apiUrl = "EricEngelen";
+      } else if (window.location.href === "http://localhost:8000/residents/GeorgetteVeekmans/stories") {
+        apiUrl = "GeorgetteVeekmans";
+      } else if (window.location.href === "http://localhost:8000/residents/RoseMarieDrouet/stories") {
+        apiUrl = "RoseMarieDrouet";
+      } else if (window.location.href === "http://localhost:8000/residents/MarieJoseeMertens/stories") {
+        apiUrl = "MarieJoséeMertens";
+      } else if (window.location.href === "http://localhost:8000/residents/feron/stories") {
+        apiUrl = "Feron";
+      }
+      axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
         headers: {
           Authorization: "Bearer " + app_key
         }

@@ -51,7 +51,7 @@ var vm2 = new Vue({
       this.stories = [];
       this.albums = [];
       this.gallery = [];
-      let apiUrl = ""
+      let apiUrl = "";
       if (window.location.href === "http://localhost:8000/residents/EricEngelen/stories") {
         apiUrl = "EricEngelen"
       } else if (window.location.href === "http://localhost:8000/residents/GeorgetteVeekmans/stories") {
@@ -60,8 +60,10 @@ var vm2 = new Vue({
         apiUrl = "RoseMarieDrouet"
       } else if (window.location.href === "http://localhost:8000/residents/MarieJoseeMertens/stories") {
         apiUrl = "MarieJoséeMertens"
-      } else if (window.location.href === "http://localhost:8000/residents/feron/stories") {
-        apiUrl = "Feron"
+      } else if (window.location.href === "http://localhost:8000/residents/RosaAndries/stories") {
+        apiUrl = "RosaAndries"
+      } else if (window.location.href === "http://localhost:8000/residents/louisadevos/stories") {
+        apiUrl = "devos"
       }
       axios.get(
         "https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {

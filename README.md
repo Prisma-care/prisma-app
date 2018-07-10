@@ -11,12 +11,33 @@ by getting to know the residents via their life stories.</p>
 
 ## Getting Started
 
-It's as simple as that:
+To start Prisma, you must first clone the repository:
 
 ```
 git clone https://github.com/Prisma/prisma-app
-php artisan serve
 ```
+
+Then, launch the PHP server:
+
+```
+php artisan serve
+````
+
+It is also necessary to install packages:
+
+```
+yarn install
+```
+
+Finaly, we need to compile in order to listen to each modification in
+the files:
+
+```
+yarn run watch
+```
+
+It's as simple as that!
+
 ## Contributions
 
 Before making any contribution look at the

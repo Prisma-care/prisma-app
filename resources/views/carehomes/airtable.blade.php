@@ -32,7 +32,7 @@
       var app_key = "keyuzHdBFw9QQKZCC";
       this.items = []
       axios.get(
-        "https://api.airtable.com/v0/"+app_id+"/story?view=Feron",
+        "https://api.airtable.com/v0/"+app_id+"/story?view=jflkmdsqfjkdsl",
         { 
           headers: { Authorization: "Bearer "+app_key } 
         }

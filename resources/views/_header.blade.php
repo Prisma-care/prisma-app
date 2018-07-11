@@ -1,4 +1,4 @@
-<header class="d-print-none">
+<header class="d-print-none main">
 
   <nav class="navbar navbar-expand-lg navbar-light">
 

@@ -52,18 +52,20 @@ var vm2 = new Vue({
       this.albums = [];
       this.gallery = [];
       let apiUrl = "";
-      if (window.location.href === "http://localhost:8000/residents/EricEngelen/stories") {
+      if (window.location.href === "http://127.0.0.1:8000/residents/EricEngelen/stories") {
         apiUrl = "EricEngelen"
-      } else if (window.location.href === "http://localhost:8000/residents/GeorgetteVeekmans/stories") {
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/georgetteveekmans/stories") {
         apiUrl = "GeorgetteVeekmans"
-      } else if (window.location.href === "http://localhost:8000/residents/RoseMarieDrouet/stories") {
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/rosemariedrouet/stories") {
         apiUrl = "RoseMarieDrouet"
-      } else if (window.location.href === "http://localhost:8000/residents/MarieJoseeMertens/stories") {
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/mariejoseemertens/stories") {
         apiUrl = "MarieJoséeMertens"
-      } else if (window.location.href === "http://localhost:8000/residents/RosaAndries/stories") {
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/rosaandries/stories") {
         apiUrl = "RosaAndries"
-      } else if (window.location.href === "http://localhost:8000/residents/louisadevos/stories") {
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/louisadevos/stories") {
         apiUrl = "devos"
+      } else if (window.location.href === "http://127.0.0.1:8000/residents/feron/stories") {
+        apiUrl = "feron"
       }
       axios.get(
         "https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
@@ -80,7 +82,7 @@ var vm2 = new Vue({
           // prep story thumbnails based on content type: youtube vs img
           if (story.fields.Youtube || story.fields.Attachments) {
             if (story.fields.Youtube) {
-              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';
+              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/hqdefault.jpg';
               story.fields.type = 'youtube';
             } else {
               story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
@@ -125,7 +127,7 @@ var vm2 = new Vue({
               slide.href = 'https://www.youtube.com/watch?v=' + self.albums[album][i].fields.Youtube;
               slide.type = 'text/html';
               slide.youtube = self.albums[album][i].fields.Youtube;
-              slide.poster = 'https://img.youtube.com/vi/' + self.albums[album][i].fields.Youtube + '/maxresdefault.jpg';
+              slide.poster = 'https://img.youtube.com/vi/' + self.albums[album][i].fields.Youtube + '/hqdefault.jpg';
             }
 
             if (self.albums[album][i].fields.type == "image") {

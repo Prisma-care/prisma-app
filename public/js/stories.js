@@ -143,7 +143,7 @@ var vm2 = new Vue({
       } else if (window.location.href === "http://127.0.0.1:8000/residents/louisadevos/stories") {
         apiUrl = "devos";
       } else if (window.location.href === "http://127.0.0.1:8000/residents/feron/stories") {
-        apiUrl = "feron";
+        apiUrl = "Feron";
       }
       axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
         headers: {

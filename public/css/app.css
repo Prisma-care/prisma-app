@@ -10542,7 +10542,7 @@ nav.navbar .dropdown-toggle {
 
 .resi-header {
   text-align: center;
-  margin-top: -5rem;
+  margin-top: 2rem;
 }
 
 .resi-header img {
@@ -10730,6 +10730,29 @@ nav.navbar .dropdown-toggle {
 
 .story-add {
   margin-bottom: 2rem;
+}
+
+.story-add .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.story-add .modal-body .add-button {
+  margin: 20px 0px;
+  background: #647EC6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.story-add .modal-body .add-button:hover {
+  color: white;
 }
 
 .story-add-photopreview,

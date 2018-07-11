@@ -10,7 +10,7 @@
       <div class="modal-body">
         <a href="https://airtable.com/shriNrmXfpIq5zf93" class="add-button" target="_blank">Voeg een foto toe</a>
         <a href="https://airtable.com/shrJiFcGZhAgDQLPL" class="add-button" target="_blank">Voeg een verhaal toe</a>
-        <a href="https://airtable.com/shruQ5vgv21gDPsGf" class="add-button" target="_blank">Voeg een Youtube-fragment toe</a>
+        <a href="https://airtable.com/shruQ5vgv21gDPsGf" class="add-button" target="_blank">Voeg een Youtubefilmpje toe</a>
       </div>
    </div>
  </div>

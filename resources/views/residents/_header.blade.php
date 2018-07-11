@@ -1,9 +1,8 @@
 <div class="resi-header d-print-none">
 
- <!-- <img src="/img/tmp/profile_5.jpg" class="rounded-circle" alt="Charles Feron">
-  <h1 class="resi-header-displayname">Mr Feron</h1>
-  <h2 class="resi-header-fullname">Charles Feron</h2>
--->
+<img src="/img/tmp/profile_5.jpg" class="rounded-circle" alt="Charles Feron">
+ <!-- <h1 class="resi-header-displayname">Mr Feron</h1>-->
+  <h1 class="resi-header-displayname">@{{stories[0]['fields']['resident-name'] ? stories[0]['fields']['resident-name'][0] : 'Nameless'}}</h1>
 </div>
 
 <div class="container d-print-none">

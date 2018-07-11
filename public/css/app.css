@@ -10514,10 +10514,6 @@ nav.navbar .dropdown-toggle {
   padding-right: 0;
 }
 
-.verhalen {
-  margin-top: 124px;
-}
-
 .resi-nav {
   margin-bottom: 3rem;
 }
@@ -10546,7 +10542,7 @@ nav.navbar .dropdown-toggle {
 
 .resi-header {
   text-align: center;
-  margin-top: -5rem;
+  margin-top: 2rem;
 }
 
 .resi-header img {

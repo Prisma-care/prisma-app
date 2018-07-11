@@ -153,6 +153,7 @@ var vm2 = new Vue({
         self.stories = response.data.records;
         // self.stories = [];
         var url = window.location.href;
+        console.log(self.stories);
         // check story types
         self.stories.forEach(function (story) {
           // prep story thumbnails based on content type: youtube vs img

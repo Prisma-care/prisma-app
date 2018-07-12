@@ -10514,6 +10514,11 @@ nav.navbar .dropdown-toggle {
   padding-right: 0;
 }
 
+#stories {
+  border-bottom: 4px solid #637DC8;
+  padding-bottom: 10px;
+}
+
 .resi-nav {
   margin-bottom: 3rem;
 }

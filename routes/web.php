@@ -31,6 +31,8 @@ Route::get('residents/georgetteveekmans/stories', ['as' => 'residents.stories', 
 Route::get('residents/ericengelen/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 Route::get('residents/rosaandries/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 Route::get('residents/louisadevos/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/miaons/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
+Route::get('residents/magdawouters/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 //Route::get('residents/{name}/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 
 

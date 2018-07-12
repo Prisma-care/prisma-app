@@ -3,6 +3,7 @@ var vm2 = new Vue({
   data: {
     albums: [],
     stories: [],
+    resident_name: [],
     checkedStories: [],
     isAddStoryVisible: false,
     showStoryActions: false,
@@ -48,24 +49,29 @@ var vm2 = new Vue({
       var self = this;
       var app_id = "appzWizY3DXnCjpgh";
       var app_key = "keyuzHdBFw9QQKZCC";
+      this.resident_name = [];
       this.stories = [];
       this.albums = [];
       this.gallery = [];
       let apiUrl = "";
-      if (window.location.href === "http://127.0.0.1:8000/residents/EricEngelen/stories") {
+      if (window.location.href === "http://146.185.134.55/residents/ericengelen/stories") {
         apiUrl = "EricEngelen"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/georgetteveekmans/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/georgetteveekmans/stories") {
         apiUrl = "GeorgetteVeekmans"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/rosemariedrouet/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/rosemariedrouet/stories") {
         apiUrl = "RoseMarieDrouet"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/mariejoseemertens/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/mariejoseemertens/stories") {
         apiUrl = "MarieJoséeMertens"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/rosaandries/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/rosaandries/stories") {
         apiUrl = "RosaAndries"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/louisadevos/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/louisadevos/stories") {
         apiUrl = "devos"
-      } else if (window.location.href === "http://127.0.0.1:8000/residents/feron/stories") {
+      } else if (window.location.href === "http://146.185.134.55/residents/feron/stories") {
         apiUrl = "Feron"
+      } else if (window.location.href === "http://146.185.134.55/residents/magdawouters/stories") {
+        apiUrl = "Wouters"
+      } else if (window.location.href === "http://146.185.134.55/residents/miaons/stories") {
+        apiUrl = "OnsMia"
       }
       axios.get(
         "https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
@@ -77,7 +83,8 @@ var vm2 = new Vue({
         self.stories = response.data.records;
         // self.stories = [];
         const url = window.location.href;
-        console.log(self.stories);
+        console.log(self.stories[0]['fields']['resident-name']);
+        self.resident_name = self.stories[0]['fields']['resident-name'];
         // check story types
         self.stories.forEach((story) => {
           // prep story thumbnails based on content type: youtube vs img

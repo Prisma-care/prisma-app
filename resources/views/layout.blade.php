@@ -12,7 +12,7 @@
 </head>
 <body>
 
- @include('_header')
+ 
 
  <main role="main">
 

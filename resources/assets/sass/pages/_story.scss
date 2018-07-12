@@ -1,5 +1,4 @@
 // Story
-
 #addStoryBtn {
   position: fixed;
   bottom: .75rem;
@@ -10,50 +9,67 @@
 .story-actions {
   background: white;
   padding: .5rem 1rem;
-  box-shadow: 0 -2px 16px 0px rgba(54,57,67,0.33);
+  box-shadow: 0 -2px 16px 0px rgba(54, 57, 67, 0.33);
 }
 
 .story-category {
   margin: 2rem 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid $gray-200;
-
-  &:last-child { border: none; }
-
+  &:last-child {
+    border: none;
+  }
   &-header {
     text-align: center;
   }
-
-  .card-columns { column-gap: 50px; }
-  
-  .card-img-overlay, .checkbox { transition: all .2s ease-in-out; }
-
-  .checkbox { opacity: 0; }
+  .card-columns {
+    column-gap: 50px;
+  }
+  .card-img-overlay,
+  .checkbox {
+    transition: all .2s ease-in-out;
+  }
+  .checkbox {
+    opacity: 0;
+  }
   button {
     color: white;
     opacity: 0;
-    &:hover { text-decoration: none; }
+    &:hover {
+      text-decoration: none;
+    }
   }
-
   .btn-edit {
     position: absolute;
     bottom: .75rem;
-
-    span { opacity: 0; display: inline-block; padding-left: .25rem; }
-    &:hover { span { opacity: 1; } }
+    span {
+      opacity: 0;
+      display: inline-block;
+      padding-left: .25rem;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
   }
-
-  .story.checked { 
-    .card { box-shadow: 0px 0px 0px 3px $blue; }
-    img { filter: saturate(0); }
-    .card-img-overlay { background: rgba(84,91,110,.8); }
-    .checkbox { opacity: 1; }
+  .story.checked {
+    .card {
+      box-shadow: 0px 0px 0px 3px $blue;
+    }
+    img {
+      filter: saturate(0);
+    }
+    .card-img-overlay {
+      background: rgba(84, 91, 110, .8);
+    }
+    .checkbox {
+      opacity: 1;
+    }
   }
-
   .card {
     border: none;
     box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.2);
-
     .btn-zoom {
       position: absolute;
       top: 50%;
@@ -61,25 +77,34 @@
       width: 100%;
       left: 0;
       text-align: center;
-
       i {
         margin: 2rem;
       }
     }
-
     &:hover {
-      img { filter: saturate(0); }
-      .card-img-overlay { 
-        background: rgba(84,91,110,.8); 
-        border-radius: $border-radius; }
-      .checkbox, button { opacity: 0.8; text-decoration: none; }
-      button:hover { opacity: 1; color: white; }
+      img {
+        filter: saturate(0);
+      }
+      .card-img-overlay {
+        background: rgba(84, 91, 110, .8);
+        border-radius: $border-radius;
+      }
+      .checkbox,
+      button {
+        opacity: 0.8;
+        text-decoration: none;
+      }
+      button:hover {
+        opacity: 1;
+        color: white;
+      }
     }
-
     &.card_text {
       border: 1px solid $gray-200;
     }
-    .card-img-overlay { padding: .75rem 1.25rem 1.25rem; } 
+    .card-img-overlay {
+      padding: .75rem 1.25rem 1.25rem;
+    }
     .card-body {
       font-size: 1.5rem;
       font-weight: 300;
@@ -89,47 +114,73 @@
 }
 
 .story-add {
-  margin-bottom: 2rem; 
-
-  &-photopreview, &-videoadd-preview {
-
-    margin-bottom: 1rem;
-    
-    &:hover {
-      img { filter: saturate(0); }
-      .card-img-overlay { background: rgba(84,91,110,.8); }
-      .close { opacity: 1; }
+  margin-bottom: 2rem;
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    .add-button {
+      margin: 20px 0px;
+      background: #647EC6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 6px;
     }
-    .card { width: 120px; }
-    .card-img-overlay, .close { transition: all .2s ease-out; }
-    .close { opacity: .2; }
+    .add-button:hover {
+      color: white;
+    }
   }
-
-  textarea, textarea:focus {
+  &-photopreview,
+  &-videoadd-preview {
+    margin-bottom: 1rem;
+    &:hover {
+      img {
+        filter: saturate(0);
+      }
+      .card-img-overlay {
+        background: rgba(84, 91, 110, .8);
+      }
+      .close {
+        opacity: 1;
+      }
+    }
+    .card {
+      width: 120px;
+    }
+    .card-img-overlay,
+    .close {
+      transition: all .2s ease-out;
+    }
+    .close {
+      opacity: .2;
+    }
+  }
+  textarea,
+  textarea:focus {
     margin-top: .5rem;
     border: none;
     padding: 0;
     box-shadow: none;
     line-height: 1.5rem;
   }
-
   &-media {
     margin-top: 1rem;
   }
 }
 
-
 /* Print styling */
 
 @media print {
-
   @import url('https://fonts.googleapis.com/css?family=Kalam');
-
-  body { border-top: none !important; }
-
-  .card-img-overlay { display: none; }
-  .story-category { clear: both; }
-  
+  body {
+    border-top: none !important;
+  }
+  .card-img-overlay {
+    display: none;
+  }
+  .story-category {
+    clear: both;
+  }
   .story-category .story {
     display: none;
     width: 50%;
@@ -138,24 +189,29 @@
     page-break-inside: avoid;
     display: block;
     &.checked {
-      img { filter: saturate(1); }
-      .checkbox { display: none; }
+      img {
+        filter: saturate(1);
+      }
+      .checkbox {
+        display: none;
+      }
     }
-    &.checked { box-shadow: none; }
+    &.checked {
+      box-shadow: none;
+    }
   }
-
-  .story-category-header h2 { 
+  .story-category-header h2 {
     display: none;
   }
-  .row { display: block; }
-
-  p { 
+  .row {
+    display: block;
+  }
+  p {
     margin-top: 1rem;
-    font-family: 'Kalam', cursive; 
+    font-family: 'Kalam', cursive;
     color: black;
     font-size: 1.25rem;
     line-height: 1.75rem;
     padding-top: .5rem;
   }
 }
-

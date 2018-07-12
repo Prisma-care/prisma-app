@@ -76,12 +76,12 @@ module.exports = __webpack_require__(47);
 /***/ 47:
 /***/ (function(module, exports) {
 
-
 var vm2 = new Vue({
   el: 'main',
   data: {
     albums: [],
     stories: [],
+    resident_name: [],
     checkedStories: [],
     isAddStoryVisible: false,
     showStoryActions: false,
@@ -121,26 +121,52 @@ var vm2 = new Vue({
     }
   },
   methods: {
+
     loadStories: function loadStories() {
       // Init variables
       var self = this;
       var app_id = "appzWizY3DXnCjpgh";
       var app_key = "keyuzHdBFw9QQKZCC";
+      this.resident_name = [];
       this.stories = [];
       this.albums = [];
       this.gallery = [];
-      axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=Feron", {
-        headers: { Authorization: "Bearer " + app_key }
+      var apiUrl = "";
+      if (window.location.href === "http://146.185.134.55/residents/ericengelen/stories") {
+        apiUrl = "EricEngelen";
+      } else if (window.location.href === "http://146.185.134.55/residents/georgetteveekmans/stories") {
+        apiUrl = "GeorgetteVeekmans";
+      } else if (window.location.href === "http://146.185.134.55/residents/rosemariedrouet/stories") {
+        apiUrl = "RoseMarieDrouet";
+      } else if (window.location.href === "http://146.185.134.55/residents/mariejoseemertens/stories") {
+        apiUrl = "MarieJoséeMertens";
+      } else if (window.location.href === "http://146.185.134.55/residents/rosaandries/stories") {
+        apiUrl = "RosaAndries";
+      } else if (window.location.href === "http://146.185.134.55/residents/louisadevos/stories") {
+        apiUrl = "devos";
+      } else if (window.location.href === "http://146.185.134.55/residents/feron/stories") {
+        apiUrl = "Feron";
+      } else if (window.location.href === "http://146.185.134.55/residents/magdawouters/stories") {
+        apiUrl = "Wouters";
+      } else if (window.location.href === "http://146.185.134.55/residents/miaons/stories") {
+        apiUrl = "OnsMia";
+      }
+      axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
+        headers: {
+          Authorization: "Bearer " + app_key
+        }
       }).then(function (response) {
         self.stories = response.data.records;
         // self.stories = [];
-
+        var url = window.location.href;
+        console.log(self.stories[0]['fields']['resident-name']);
+        self.resident_name = self.stories[0]['fields']['resident-name'];
         // check story types
         self.stories.forEach(function (story) {
           // prep story thumbnails based on content type: youtube vs img
           if (story.fields.Youtube || story.fields.Attachments) {
             if (story.fields.Youtube) {
-              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/maxresdefault.jpg';
+              story.fields.thumbnail = 'https://img.youtube.com/vi/' + story.fields.Youtube + '/hqdefault.jpg';
               story.fields.type = 'youtube';
             } else {
               story.fields.thumbnail = story.fields.Attachments[0].thumbnails.large.url;
@@ -187,7 +213,7 @@ var vm2 = new Vue({
               slide.href = 'https://www.youtube.com/watch?v=' + self.albums[album][i].fields.Youtube;
               slide.type = 'text/html';
               slide.youtube = self.albums[album][i].fields.Youtube;
-              slide.poster = 'https://img.youtube.com/vi/' + self.albums[album][i].fields.Youtube + '/maxresdefault.jpg';
+              slide.poster = 'https://img.youtube.com/vi/' + self.albums[album][i].fields.Youtube + '/hqdefault.jpg';
             }
 
             if (self.albums[album][i].fields.type == "image") {

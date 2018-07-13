@@ -3451,42 +3451,66 @@ fieldset:disabled a.btn {
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(243, 90, 75, 0.5);
 }
 
-.btn-outline-light {
+.btn-outline-light,
+.story-category .btn-edit,
+.story-category .btn-add {
   color: #F4F4F4;
   background-color: transparent;
   background-image: none;
   border-color: #F4F4F4;
 }
 
-.btn-outline-light:hover {
+.btn-outline-light:hover,
+.story-category .btn-edit:hover,
+.story-category .btn-add:hover {
   color: #363943;
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
 .btn-outline-light:focus,
-.btn-outline-light.focus {
+.story-category .btn-edit:focus,
+.story-category .btn-add:focus,
+.btn-outline-light.focus,
+.story-category .focus.btn-edit,
+.story-category .focus.btn-add {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(244, 244, 244, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(244, 244, 244, 0.5);
 }
 
 .btn-outline-light.disabled,
-.btn-outline-light:disabled {
+.story-category .disabled.btn-edit,
+.story-category .disabled.btn-add,
+.btn-outline-light:disabled,
+.story-category .btn-edit:disabled,
+.story-category .btn-add:disabled {
   color: #F4F4F4;
   background-color: transparent;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active,
+.story-category .btn-edit:not(:disabled):not(.disabled):active,
+.story-category .btn-add:not(:disabled):not(.disabled):active,
 .btn-outline-light:not(:disabled):not(.disabled).active,
-.show > .btn-outline-light.dropdown-toggle {
+.story-category .btn-edit:not(:disabled):not(.disabled).active,
+.story-category .btn-add:not(:disabled):not(.disabled).active,
+.show > .btn-outline-light.dropdown-toggle,
+.story-category .show > .dropdown-toggle.btn-edit,
+.story-category .show > .dropdown-toggle.btn-add {
   color: #363943;
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.story-category .btn-edit:not(:disabled):not(.disabled):active:focus,
+.story-category .btn-add:not(:disabled):not(.disabled):active:focus,
 .btn-outline-light:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-light.dropdown-toggle:focus {
+.story-category .btn-edit:not(:disabled):not(.disabled).active:focus,
+.story-category .btn-add:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-light.dropdown-toggle:focus,
+.story-category .show > .dropdown-toggle.btn-edit:focus,
+.story-category .show > .dropdown-toggle.btn-add:focus {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(244, 244, 244, 0.5);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(244, 244, 244, 0.5);
 }
@@ -3567,7 +3591,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-sm,
-.btn-group-sm > .btn {
+.btn-group-sm > .btn,
+.story-category .btn-edit,
+.story-category .btn-add {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3925,7 +3951,9 @@ input[type="button"].btn-block {
 }
 
 .btn-sm + .dropdown-toggle-split,
-.btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-group-sm > .btn + .dropdown-toggle-split,
+.story-category .btn-edit + .dropdown-toggle-split,
+.story-category .btn-add + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
@@ -10672,28 +10700,18 @@ nav.navbar .dropdown-toggle {
   opacity: 0;
 }
 
-.story-category button {
-  color: white;
-  opacity: 0;
+.story-category .btn-edit,
+.story-category .btn-add {
+  font-size: .85em;
+  color: #545B6E;
 }
 
-.story-category button:hover {
-  text-decoration: none;
+.story-category .story {
+  margin-bottom: 4em;
 }
 
-.story-category .btn-edit {
-  position: absolute;
-  bottom: .75rem;
-}
-
-.story-category .btn-edit span {
-  opacity: 0;
-  display: inline-block;
-  padding-left: .25rem;
-}
-
-.story-category .btn-edit:hover span {
-  opacity: 1;
+.story-category .story p {
+  margin-bottom: 1.25em;
 }
 
 .story-category .story.checked .card {
@@ -10752,6 +10770,7 @@ nav.navbar .dropdown-toggle {
 
 .story-category .card.card_text {
   border: 1px solid #EDEDED;
+  margin-bottom: 1.5rem;
 }
 
 .story-category .card .card-img-overlay {

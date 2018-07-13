@@ -58,9 +58,10 @@
       box-shadow: 0px 0px 0px 3px $blue;
     }
     img {
-      filter: saturate(0);
+      // filter: saturate(0);
     }
     .card-img-overlay {
+      display: none;
       background: rgba(84, 91, 110, .8);
     }
     .checkbox {
@@ -70,31 +71,38 @@
   .card {
     border: none;
     box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.2);
-    .btn-zoom {
+
+    .btn-play, .btn-zoom {
       position: absolute;
+      opacity: 1;
+      width: 3rem;
+      height: 3rem;
+      left: 50%;
+      margin-left: -1.5rem;
       top: 50%;
-      margin-top: -4rem;
-      width: 100%;
-      left: 0;
-      text-align: center;
-      i {
-        margin: 2rem;
-      }
+      margin-top: -1.5rem;
+      border-radius: 50%;
     }
+
+    .btn-zoom {
+      opacity: 0
+    }
+
     &:hover {
       img {
-        filter: saturate(0);
+        // filter: saturate(0);
       }
       .card-img-overlay {
+        display: none;
         background: rgba(84, 91, 110, .8);
         border-radius: $border-radius;
       }
       .checkbox,
-      button {
-        opacity: 0.8;
+      button.btn-zoom {
+        opacity: 1;
         text-decoration: none;
       }
-      button:hover {
+      button.btn-zoom:hover {
         opacity: 1;
         color: white;
       }
@@ -103,6 +111,7 @@
       border: 1px solid $gray-200;
     }
     .card-img-overlay {
+      display: none;
       padding: .75rem 1.25rem 1.25rem;
     }
     .card-body {
@@ -190,7 +199,7 @@
     display: block;
     &.checked {
       img {
-        filter: saturate(1);
+        // filter: saturate(1);
       }
       .checkbox {
         display: none;

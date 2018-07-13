@@ -10701,12 +10701,8 @@ nav.navbar .dropdown-toggle {
           box-shadow: 0px 0px 0px 3px #637DC8;
 }
 
-.story-category .story.checked img {
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-}
-
 .story-category .story.checked .card-img-overlay {
+  display: none;
   background: rgba(84, 91, 110, 0.8);
 }
 
@@ -10720,36 +10716,36 @@ nav.navbar .dropdown-toggle {
           box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.2);
 }
 
+.story-category .card .btn-play,
 .story-category .card .btn-zoom {
   position: absolute;
+  opacity: 1;
+  width: 3rem;
+  height: 3rem;
+  left: 50%;
+  margin-left: -1.5rem;
   top: 50%;
-  margin-top: -4rem;
-  width: 100%;
-  left: 0;
-  text-align: center;
+  margin-top: -1.5rem;
+  border-radius: 50%;
 }
 
-.story-category .card .btn-zoom i {
-  margin: 2rem;
-}
-
-.story-category .card:hover img {
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
+.story-category .card .btn-zoom {
+  opacity: 0;
 }
 
 .story-category .card:hover .card-img-overlay {
+  display: none;
   background: rgba(84, 91, 110, 0.8);
   border-radius: 0.25rem;
 }
 
 .story-category .card:hover .checkbox,
-.story-category .card:hover button {
-  opacity: 0.8;
+.story-category .card:hover button.btn-zoom {
+  opacity: 1;
   text-decoration: none;
 }
 
-.story-category .card:hover button:hover {
+.story-category .card:hover button.btn-zoom:hover {
   opacity: 1;
   color: white;
 }
@@ -10759,6 +10755,7 @@ nav.navbar .dropdown-toggle {
 }
 
 .story-category .card .card-img-overlay {
+  display: none;
   padding: .75rem 1.25rem 1.25rem;
 }
 
@@ -10870,11 +10867,6 @@ nav.navbar .dropdown-toggle {
     float: left;
     page-break-inside: avoid;
     display: block;
-  }
-
-  .story-category .story.checked img {
-    -webkit-filter: saturate(1);
-            filter: saturate(1);
   }
 
   .story-category .story.checked .checkbox {

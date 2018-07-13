@@ -1,10 +1,43 @@
 // Resident
+
 .resi-nav {
+  overflow: hidden;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0.4rem 0.6rem rgba($gray-800, 0.1); 
+  height: 38px;
+
+  nav {
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    box-shadow: inset 0px -1px 0px 0px $gray-200;
+    padding-bottom: 38px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 34px;
+      background: linear-gradient(90deg, rgba(255,255,255,0), white);
+      position: absolute;
+      right: 0;
+    }
+  }
+
   .nav-link {
-    border-bottom: 1px solid $gray-200;
-    font-weight: 800;
-    padding: 0.5rem 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-bottom: 3px solid $white;
   }
   .nav-link.active {
     border-bottom: 3px solid $blue;

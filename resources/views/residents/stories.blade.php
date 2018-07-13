@@ -47,7 +47,7 @@ class="container">
 
     <div class="story-category">
       <div class="story-category-header">
-        <h2>@{{ album }} </h2>
+        <h2 :id="album">@{{ album }} </h2>
       </div>
 
       <div class="row">

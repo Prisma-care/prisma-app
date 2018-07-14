@@ -10698,14 +10698,20 @@ nav.navbar .dropdown-toggle {
           column-gap: 50px;
 }
 
-.story-category .card-img-overlay,
-.story-category .checkbox {
+.story-category .card-img-overlay {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  opacity: 0;
+  height: 4rem;
 }
 
-.story-category .checkbox {
-  opacity: 0;
+.story-category .card-img-overlay label {
+  color: #fff;
+  margin: 0 0 0 .75rem;
+  text-shadow: 1px 0 0 rgba(54, 57, 67, 0.8);
+  font-weight: 300;
+  font-size: .85rem;
+  margin-top: .25rem;
 }
 
 .story-category .btn-edit,
@@ -10728,11 +10734,6 @@ nav.navbar .dropdown-toggle {
 }
 
 .story-category .story.checked .card-img-overlay {
-  display: none;
-  background: rgba(84, 91, 110, 0.8);
-}
-
-.story-category .story.checked .checkbox {
   opacity: 1;
 }
 
@@ -10753,19 +10754,27 @@ nav.navbar .dropdown-toggle {
   top: 50%;
   margin-top: -1.5rem;
   border-radius: 50%;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 .story-category .card .btn-zoom {
   opacity: 0;
 }
 
+.story-category .card img {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 .story-category .card:hover .card-img-overlay {
-  display: none;
-  background: rgba(84, 91, 110, 0.8);
+  opacity: 1;
+  height: 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 57, 67, 0.5)), to(rgba(54, 57, 67, 0)));
+  background: linear-gradient(rgba(54, 57, 67, 0.5), rgba(54, 57, 67, 0));
   border-radius: 0.25rem;
 }
 
-.story-category .card:hover .checkbox,
 .story-category .card:hover button.btn-zoom {
   opacity: 1;
   text-decoration: none;
@@ -10782,7 +10791,6 @@ nav.navbar .dropdown-toggle {
 }
 
 .story-category .card .card-img-overlay {
-  display: none;
   padding: .75rem 1.25rem 1.25rem;
 }
 
@@ -10822,12 +10830,6 @@ nav.navbar .dropdown-toggle {
 .story-add-photopreview,
 .story-add-videoadd-preview {
   margin-bottom: 1rem;
-}
-
-.story-add-photopreview:hover img,
-.story-add-videoadd-preview:hover img {
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
 }
 
 .story-add-photopreview:hover .card-img-overlay,
@@ -10894,10 +10896,6 @@ nav.navbar .dropdown-toggle {
     float: left;
     page-break-inside: avoid;
     display: block;
-  }
-
-  .story-category .story.checked .checkbox {
-    display: none;
   }
 
   .story-category .story.checked {

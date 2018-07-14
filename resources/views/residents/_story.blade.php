@@ -21,16 +21,10 @@ class="btn btn-zoom d-flex btn-primary justify-content-center align-items-center
 </button>
 
 <div class="card-img-overlay">
-  <input type="checkbox" :id="story.id" :value="story.id" v-model="checkedStories" class="checkbox" number> 
-  <label class="form-check-label" :for="story.id"><i class="material-icons mr-2 md-24">print</i> Selecteer</label>
-
-  <button 
-  data-toggle="modal"
-  data-target="#editStoryModal" 
-  class="btn btn-link btn-sm px-0 d-flex align-items-center btn-edit">
-  <i class="material-icons md-18">edit</i> <span>Bewerk</span>
-</button>
-
+  <div class="d-flex align-items-center">
+    <input type="checkbox" :id="story.id" :value="story.id" v-model="checkedStories" class="checkbox" number> 
+    <label class="form-check-label" :for="story.id">Selecteer</label>
+  </div>
 </div>
 </div>
 
@@ -44,14 +38,6 @@ class="mt-3">@{{ story['fields']['Notes'] }}</p>
     @{{ story['fields']['Notes'] }}
   </div>
 
-  <div class="card-img-overlay text-right">
-    <button 
-    data-toggle="modal"
-    data-target="#editStoryModal" 
-    class="btn btn-link btn-sm px-0 btn-edit">
-    <i class="material-icons md-18 mr-2">edit</i> <span>Pas tekst aan</span>
-  </button>
-</div>
 </div>
 
 {{-- CTA's --}}

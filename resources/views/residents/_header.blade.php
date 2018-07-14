@@ -7,7 +7,7 @@
 </div>
 
 <div class="resi-nav">
-  <nav class="nav d-print-none" id="navbar-albums">
+  <nav class="nav d-print-none justify-content-center" id="navbar-albums">
 
     <a
     v-for="(albumstories, album) in albums" 

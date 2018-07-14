@@ -31,13 +31,16 @@ class="btn btn-zoom d-flex btn-primary justify-content-center align-items-center
 
 </div>
 </div>
+
+
 <p 
 v-if="story['fields']['type']=='image' || story['fields']['type']=='youtube'"
-class="mt-3">@{{ story['fields']['Notes'] }}</p>
+class="mt-3"><span class="badge badge-light" v-if="story['fields']['Year']">@{{ story['fields']['Year'] }}</span> @{{ story['fields']['Notes'] }}</p>
 
 <div class="card card_text" v-if="story['fields']['type']=='text'">
 
   <div class="card-body">
+    <span class="badge badge-light" v-if="story['fields']['Year']">@{{ story['fields']['Year'] }}</span> 
     @{{ story['fields']['Notes'] }}
   </div>
 
@@ -53,11 +56,11 @@ class="mt-3">@{{ story['fields']['Notes'] }}</p>
 
 {{-- CTA's --}}
 <div v-if="story['fields']['Notes'] && !story['fields']['thumbnail']">
-<button
-data-toggle="modal"
-data-target="#editStoryModal"
-class="btn btn-add d-flex justify-content-center align-items-center">
-<i class="material-icons md-18 mr-2">add_photo_alternate</i> <span>Voeg beeld toe</span>
+  <button
+  data-toggle="modal"
+  data-target="#editStoryModal"
+  class="btn btn-add d-flex justify-content-center align-items-center mb-2">
+  <i class="material-icons md-18 mr-2">add_photo_alternate</i> <span>Voeg beeld toe <em>TODO</em></span>
 </button>
 </div>
 

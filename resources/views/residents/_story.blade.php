@@ -4,6 +4,8 @@ class="card d-flex align-self-center">
 
 <img class="card-img" :src="story['fields']['thumbnail']" alt="" v-if="story['fields']['thumbnail']">
 
+<span class="story-year badge badge-dark" v-if="story['fields']['Year']">@{{ story['fields']['Year'] }}</span>
+
 <button
 @click="index = story['fields']['index']"
 v-if="story['fields']['type']=='youtube'"
@@ -32,15 +34,13 @@ class="btn btn-zoom d-flex btn-primary justify-content-center align-items-center
 </div>
 </div>
 
-
 <p 
 v-if="story['fields']['type']=='image' || story['fields']['type']=='youtube'"
-class="mt-3"><span class="badge badge-light" v-if="story['fields']['Year']">@{{ story['fields']['Year'] }}</span> @{{ story['fields']['Notes'] }}</p>
+class="mt-3">@{{ story['fields']['Notes'] }}</p>
 
 <div class="card card_text" v-if="story['fields']['type']=='text'">
 
   <div class="card-body">
-    <span class="badge badge-light" v-if="story['fields']['Year']">@{{ story['fields']['Year'] }}</span> 
     @{{ story['fields']['Notes'] }}
   </div>
 

@@ -45,7 +45,10 @@ class="container">
 
   {{-- Stories --}}
 
-    <div class="story-category">
+    <div 
+      class="story-category" 
+      :id="album">
+      
       <div class="story-category-header">
         <h2>@{{ album }} </h2>
       </div>

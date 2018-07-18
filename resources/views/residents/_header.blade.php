@@ -22,11 +22,3 @@ v-if="Object.keys(albums).length>2">
 </nav>
 
 </div>
-
-{{-- 
-  <nav class="nav resi-nav justify-content-center">
-    <a class=" verhalen nav-link {{ Route::currentRouteNamed('residents.stories') ? 'active' : '' }}" href="{{ route('residents.stories') }}">Verhalen</a>
-    <a class="nav-link {{ Route::currentRouteNamed('residents.preferences') ? 'active' : '' }}" href="{{ route('residents.preferences') }}">Voorkeuren</a>
-    <a class="nav-link {{ Route::currentRouteNamed('residents.family') ? 'active' : '' }}" href="{{ route('residents.family') }}">Familie</a>
-    <a class="nav-link {{ Route::currentRouteNamed('residents.profile.edit') ? 'active' : '' }}" href="{{ route('residents.profile.edit') }}">Profiel</a>
-  </nav> --}}

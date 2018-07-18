@@ -1,6 +1,8 @@
 nav.navbar {
   background: transparent;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
+  border-bottom: 1px solid $gray-200;
+
   #logo {
     height: 1rem;
     margin-right: .75rem;
@@ -9,13 +11,32 @@ nav.navbar {
       fill: $blue;
     }
   }
+
+  .nav-link a { 
+    padding-bottom: 1rem;
+    padding-top: .25rem; 
+  }
+
+  .nav-link.active {
+    border-bottom: 4px solid $blue;
+  }
+
+  li { margin: 0 .75rem; }
+
   a {
     font-size: .9rem;
     color: $gray-700;
+
     &:hover {
       color: $gray-600;
+      text-decoration: none;
     }
   }
+
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
   .dropdown-toggle {
     padding-right: 0;
   }

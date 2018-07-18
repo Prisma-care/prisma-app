@@ -12,7 +12,7 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-albums">
 
- 
+@include('_header')
 
  <main role="main">
 

@@ -10516,7 +10516,8 @@ a.text-dark:focus {
 
 nav.navbar {
   background: transparent;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
+  border-bottom: 1px solid #EDEDED;
 }
 
 nav.navbar #logo {
@@ -10529,6 +10530,19 @@ nav.navbar #logo path {
   fill: #637DC8;
 }
 
+nav.navbar .nav-link a {
+  padding-bottom: 1rem;
+  padding-top: .25rem;
+}
+
+nav.navbar .nav-link.active {
+  border-bottom: 4px solid #637DC8;
+}
+
+nav.navbar li {
+  margin: 0 .75rem;
+}
+
 nav.navbar a {
   font-size: .9rem;
   color: #545B6E;
@@ -10536,6 +10550,11 @@ nav.navbar a {
 
 nav.navbar a:hover {
   color: #828A99;
+  text-decoration: none;
+}
+
+nav.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
 nav.navbar .dropdown-toggle {

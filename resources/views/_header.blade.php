@@ -1,6 +1,6 @@
 <header class="d-print-none main">
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-sm">
 
     <div class="container d-flex justify-content-between">
 
@@ -13,10 +13,20 @@
         Prisma
       </a>
 
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a class=" verhalen nav-link {{ Route::currentRouteNamed('residents.stories') ? 'active' : '' }}" href="{{ route('residents.stories') }}">Verhalen</a></li>
+        <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.family') ? 'active' : '' }}" href="{{ route('residents.family') }}">Familie uitnodigen</a></li>
+        {{-- <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.preferences') ? 'active' : '' }}" href="{{ route('residents.preferences') }}">Voorkeuren</a></li>
+        <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.profile.edit') ? 'active' : '' }}" href="{{ route('residents.profile.edit') }}">Profiel</a></li> --}}
+      </ul>
+
       <div class="dropdown">
-        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sint Monika</a>
+        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frederik Vincx</a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Profiel van Marie-Josée</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Afmelden</a>
         </div>
       </div>

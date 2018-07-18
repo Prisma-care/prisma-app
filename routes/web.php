@@ -23,6 +23,7 @@ Route::get('residents/create', ['as' => 'residents.create', 'uses' => 'Residents
 //Route::get('residents/1/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 Route::get('residents/1/preferences', ['as' => 'residents.preferences', 'uses' => 'ResidentsController@preferences']);
 Route::get('residents/1/family', ['as' => 'residents.family', 'uses' => 'ResidentsController@family']);
+Route::get('residents/1/family/invite', ['as' => 'residents.familyinvite', 'uses' => 'ResidentsController@invite']);
 Route::get('residents/1/profile/edit', ['as' => 'residents.profile.edit', 'uses' => 'ResidentsController@edit']);
 Route::get('residents/feron/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);
 Route::get('residents/mariejoseemertens/stories', ['as' => 'residents.stories', 'uses' => 'ResidentsController@stories']);

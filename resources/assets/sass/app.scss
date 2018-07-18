@@ -12,14 +12,18 @@
 
 body {
   border-top: 1rem solid $blue;
-}
+} 
 
 .lead {
   font-family: $font-family-sans-serif;
   font-weight: 200;
   color: $gray-500;
+  line-height: 1.75rem;
   &-lg {
     font-size: 2.5rem;
+  }
+  &-sm {
+    font-size: 1rem;
   }
 }
 
@@ -66,6 +70,10 @@ a .card {
 
 a:hover .card {
   box-shadow: 0px 4px 20px 0px rgba(84, 91, 110, .2);
+}
+
+.form-check-label { 
+  margin-top: 0;
 }
 
 .card {

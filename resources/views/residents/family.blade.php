@@ -1,100 +1,47 @@
 @extends ('layout')
 
 @section ('content')
-<div id="root">
-  <div class="email-invite">
-    <div class="email-form">
-      <div class="container">
-        <div v-if="step === 1">
-          <div class="row">
-            <div class="col-lg-12 mt-4">
-              <h1>Nodig familie uit om mee verhalen te verzamelen</h1>
-              <p>Stuur hen een uitnodiging via email voor Prisma</p>
-            </div>
-          </div>
-          <div class="row">
-            <b-form action="" class="col-lg-12">
-              <div class="row">
-                <div class="col-lg-6 form-group name">
-                  <input type="text" v-model="form.firstname" class="form-control">
-                  <label for="firstname">Voornaam</label>
-                </div>
-                <div class="col-lg-6 form-group name">
-                  <input type="text" v-model="form.lastname" class="form-control">
-                  <label for="lastname">Familienaam</label>
-               </div>
-              </div>
-              <div class="form-group">
-                <input type="email" v-model="form.email" class="form-control">
-                <label for="email">Email</label>
-              </div>
-              <div class="form-group">
-                <input type="text" v-model="form.subject" class="form-control">
-                <label for="subject">Onderwerp</label>
-              </div>
-              <button @click="next" :disabled="isValid" class="btn btn-primary">Volgende stap</button>
-            </b-form>
-          </div>
-        </div>
-        <div v-if="step ===2">
-          <div class="row">
-            <div class="col-lg-12 mt-4">
-              <h1>Schrijf een gepersonaliseerd bericht</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 mt-4">
-              <h5>Waarvoor heb je hulp nodig?</h5>
-            </div>
-            <div class="col-lg-3">
-              <button class="option" @click="changeExample($event)" value="general">Alles</button>
-              <button class="option" @click="changeExample($event)" value="digital">Foto's digitaliseren</button>
-              <button class="option" @click="changeExample($event)" value="search">Beelden opzoeken</button>
-              <button class="option" @click="changeExample($event)" value="interview">Familie interviewen</button>
-            </div>
-            <div class="col-lg-8">
-              <p>@{{example[current_example]}}</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 mt-3">
-                  <h5>Stuur een persoonlijk bericht</h5>
-                  <textarea
-                  v-model="message"
-                  placeholder="Schrijf hier je persoonlijke boodschap"
-                  class="mb-3 form-control"
-                  >
-                  </textarea>
-                <button class="btn btn-primary btn-left"  @click="prev">Vorige stap</button>
-                <button class="btn btn-primary btn-right" :disabled="isValidMessage">Verzenden</button>
+<div id="root" class="container mt-4">
 
-            </div>
-          </div>
-        </div>
+  <div v-if="step === 1">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Nodig familie uit</h1>
+    <p class="lead">Waar babbelt Lea graag over? Verzamel samen beelden die personeel in het woonzorgcentrum helpen om een gesprek aan te knopen.</p>
+
+      </div>
+      <div class="col-md-4 text-right pt-5">
+        <a href="{{ route('residents.familyinvite') }}" class="btn btn-primary">Vraag hulp aan een familielid</a>
       </div>
     </div>
-    <div class="email-expl" v-if="step === 1">
-      
-    </div>
-    <div class="email-expl" v-if="step === 2">
-      <div class="email-template-header">
-        <p>Zo zal je email er uit zien</p>
+
+    
+
+    <div class="row">
+      <div class="col-4">
+        <img src="/img/invite-ownphotos.jpg" alt="Foto's uit jullie familie albums" class="img-fluid mb-4">
       </div>
-      <div class="email-info">
-        <p><span>Aan: </span>@{{form.email}}</p>
-      </div>
-      <div class="email-info">
-        <p><span>Onderwerp: </span>@{{form.subject}}</p>
-      </div>
-      <div class="email-body">
-        <p>@{{message}}</p>
+      <div class="col-8 pt-5">
+        <h4>Wie zal de familiefoto's digitaliseren?</h4>
+        <p>Zoek in jullie foto albums naar belangrijke beelden in het leven van Lea. Wie in de familie heeft de albums en kan foto's inscannen met computer of smartphone? </p>
+
+        <a href="{{ route('residents.familyinvite') }}" class="btn btn-light">Vraag hulp</a>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-8 pt-5">
+        <h4>Wie helpt foto's en video's opzoeken op internet?</h4>
+        <p>Zoek op het internet naar foto’s en video’s die leuke verhalen losmaken. Wie kent bijvoorbeeld de favoriete muziek van Lea? Wie is goed in video's over vroeger opzoeken op Youtube?</p>
+        <a href="{{ route('residents.familyinvite') }}" class="btn btn-light">Vraag hulp</a>
+      </div>
+      <div class="col-4">
+        <img src="/img/invite-generalstories.jpg" alt="Beelden over de interesses van Lea" class="img-fluid">
+      </div>
+    </div>
+
   </div>
+
 </div>
 
-@endsection
-
-@section ('scripts')
-<script src="/js/family.js"></script>
 @endsection

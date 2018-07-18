@@ -32,6 +32,11 @@ class ResidentsController extends Controller
       return view('residents.family');
     }
 
+    public function invite()
+    {
+      return view('residents.familyinvite');
+    }
+
     public function edit()
     {
       return view('residents.profile');

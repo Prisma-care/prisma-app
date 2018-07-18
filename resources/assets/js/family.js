@@ -2,11 +2,12 @@ var app = new Vue({
   el: '#root',
   data: {
     firstrun: false,
+    residentName: 'Lea',
     firstname: '',
     lastname: '',
     email: '',
     showAddFamily: false,
-    step: 2,
+    step: 1,
     example: {
       general: `Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.
       Om dit te doen is er een applicatie genaamd Prisma.

@@ -80,11 +80,12 @@ var app = new Vue({
   el: '#root',
   data: {
     firstrun: false,
+    residentName: 'Lea',
     firstname: '',
     lastname: '',
     email: '',
     showAddFamily: false,
-    step: 2,
+    step: 1,
     example: {
       general: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric',
       digital: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric',

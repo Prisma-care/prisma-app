@@ -76,8 +76,8 @@ class="text-center d-print-none row">
 
   <div class="col-md-8 mx-auto">
 
-    <p class="lead lead-lg">Wie is Charles?</p>
-    <p>Help Sint Monika om Charles te leren kennen aan de hand van verhalen over zijn leven.</p>
+    <p class="lead lead-lg">Wie is Irma?</p>
+    <p>Help het Magnolia team om Irma te leren kennen aan de hand van verhalen over haar leven.</p>
 
     <button 
     v-on:click="isAddStoryVisible = true" 
@@ -94,7 +94,7 @@ class="text-center d-print-none row">
 
     <hr class="mt-4">
     <h2 class="mb-3">Hulp van je familie</h2>
-    <p>Wie heeft er nog foto's van Charles, en kan de verhalen aanvullen? </p>
+    <p>Wie heeft er nog foto's van Irma, en kan de verhalen aanvullen? </p>
     <p><a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a></p>
 
   </div>

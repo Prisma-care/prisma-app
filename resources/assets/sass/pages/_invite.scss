@@ -1,0 +1,82 @@
+.email-invite {
+  .option:focus,
+  textarea:focus,
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+  .container {
+    width: 80%;
+  }
+  .email-form {
+    border-right: 1px solid black;
+    float: left;
+    width: 50%;
+    height: 94vh;
+    background: white;
+    ;
+    position: fixed;
+    .name {
+      label {
+        left: 1.8rem;
+      }
+    }
+    .option {
+      min-width: 114px;
+      min-height: 70px;
+      background: white;
+      cursor: pointer;
+      border: 1px solid white;
+      color: $blue;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 2px rgba(25, 25, 25, .2);
+      transition: all 0.2s ease;
+      outline: none;
+    }
+    .option:hover {
+      background: $blue;
+      color: white;
+      border: 1px solid $blue;
+    }
+  }
+  .email-expl {
+    position: relative;
+    left: 50%;
+    background: white;
+    width: 50%;
+    min-height: 98vh;
+    overflow-y: hidden;
+    .email-info,
+    .email-template-header {
+      border-bottom: 1px solid black;
+      padding: 16px;
+      span {
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .email-body {
+      word-break: break-word;
+      padding: 16px;
+    }
+  }
+  button {
+    float: right;
+    background: $blue;
+    border: 1px solid $blue;
+  }
+  button:hover {
+    background: #4867BC;
+  }
+  .btn-left {
+    float: left;
+  }
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+}

@@ -10900,6 +10900,102 @@ nav.navbar .dropdown-toggle {
   }
 }
 
+.email-invite .option:focus,
+.email-invite textarea:focus,
+.email-invite input:focus,
+.email-invite button:focus {
+  outline: none;
+}
+
+.email-invite .container {
+  width: 80%;
+}
+
+.email-invite .email-form {
+  border-right: 1px solid black;
+  float: left;
+  width: 50%;
+  height: 94vh;
+  background: white;
+  position: fixed;
+}
+
+.email-invite .email-form .name label {
+  left: 1.8rem;
+}
+
+.email-invite .email-form .option {
+  min-width: 114px;
+  min-height: 70px;
+  background: white;
+  cursor: pointer;
+  border: 1px solid white;
+  color: #637DC8;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+          box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.email-invite .email-form .option:hover {
+  background: #637DC8;
+  color: white;
+  border: 1px solid #637DC8;
+}
+
+.email-invite .email-expl {
+  position: relative;
+  left: 50%;
+  background: white;
+  width: 50%;
+  min-height: 98vh;
+  overflow-y: hidden;
+}
+
+.email-invite .email-expl .email-info,
+.email-invite .email-expl .email-template-header {
+  border-bottom: 1px solid black;
+  padding: 16px;
+}
+
+.email-invite .email-expl .email-info span,
+.email-invite .email-expl .email-template-header span {
+  font-weight: bold;
+}
+
+.email-invite .email-expl .email-info p,
+.email-invite .email-expl .email-template-header p {
+  margin-bottom: 0;
+}
+
+.email-invite .email-expl .email-body {
+  word-break: break-word;
+  padding: 16px;
+}
+
+.email-invite button {
+  float: right;
+  background: #637DC8;
+  border: 1px solid #637DC8;
+}
+
+.email-invite button:hover {
+  background: #4867BC;
+}
+
+.email-invite .btn-left {
+  float: left;
+}
+
+.email-invite textarea {
+  height: 150px;
+  resize: none;
+}
+
 /*
  * blueimp Gallery CSS
  * https://github.com/blueimp/Gallery

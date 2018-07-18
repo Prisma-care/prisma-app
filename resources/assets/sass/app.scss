@@ -1,23 +1,23 @@
-
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 @import "layout/header";
 @import "pages/resident";
 @import "pages/story";
 @import "pages/family";
+@import "pages/invite";
 @import 'vendor/blueimp-gallery';
-
-[v-cloak] { display: none }
+[v-cloak] {
+  display: none
+}
 
 body {
   border-top: 1rem solid $blue;
 }
 
-.lead { 
+.lead {
   font-family: $font-family-sans-serif;
   font-weight: 200;
   color: $gray-500;
-
   &-lg {
     font-size: 2.5rem;
   }
@@ -35,9 +35,9 @@ label {
   margin-top: 1.25rem;
   color: $gray-800;
 }
-.form-group { 
+
+.form-group {
   position: relative;
-  
   input.form-control {
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -45,7 +45,6 @@ label {
     padding-top: 1.75rem;
     padding-bottom: .5rem;
   }
-
   label {
     position: absolute;
     top: .55rem;
@@ -57,30 +56,57 @@ label {
   }
 }
 
-a:hover { text-decoration: none; }
-a .card { transition: all .2s ease-in-out; }
-a:hover .card { box-shadow: 0px 4px 20px 0px rgba(84, 91, 110, .2); }
+a:hover {
+  text-decoration: none;
+}
 
-.card { box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.075); }
+a .card {
+  transition: all .2s ease-in-out;
+}
+
+a:hover .card {
+  box-shadow: 0px 4px 20px 0px rgba(84, 91, 110, .2);
+}
+
+.card {
+  box-shadow: 0px 2px 14px 0px rgba(84, 91, 110, 0.075);
+}
 
 .pref {
   &-item {
     margin-top: 1rem;
     &:hover {
-      .pref-item-rollover { opacity: 1; }
+      .pref-item-rollover {
+        opacity: 1;
+      }
     }
     &-title {
       text-align: right;
-      i { font-size: 3rem; color: $blue; }
+      i {
+        font-size: 3rem;
+        color: $blue;
+      }
     }
-    &-rollover { opacity: 0; }
-
-    p { white-space: pre; }
+    &-rollover {
+      opacity: 0;
+    }
+    p {
+      white-space: pre;
+    }
   }
-
   @include media-breakpoint-down(sm) {
-    .pref-item-title, .pref-item-rollover, .pref-item-edit, p, h2 { text-align: center; }
-    .pref-item-rollover, .pref-item-edit { opacity: 1; margin-bottom: 2.5rem;}
+    .pref-item-title,
+    .pref-item-rollover,
+    .pref-item-edit,
+    p,
+    h2 {
+      text-align: center;
+    }
+    .pref-item-rollover,
+    .pref-item-edit {
+      opacity: 1;
+      margin-bottom: 2.5rem;
+    }
   }
 }
 
@@ -95,12 +121,10 @@ footer {
   font-size: .8rem;
   margin-top: 2rem;
   color: $gray-600;
-
-  a { 
+  a {
     color: $gray-600;
   }
 }
-
 
 #customFile .custom-file-control:lang(en)::after {
   content: "Select file...";
@@ -111,6 +135,7 @@ footer {
 }
 
 /*when a value is selected, this class removes the content */
+
 .custom-file-control.selected:lang(en)::after {
   content: "" !important;
 }
@@ -118,11 +143,23 @@ footer {
 .custom-file {
   overflow: hidden;
 }
+
 .custom-file-control {
   white-space: nowrap;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}

@@ -6,7 +6,9 @@
 
 </div>
 
-<div class="resi-nav">
+<div class="resi-nav"
+v-if="albums.length>2">
+
   <nav class="nav d-print-none justify-content-center" id="navbar-albums">
 
     <a

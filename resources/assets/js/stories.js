@@ -73,14 +73,26 @@ var vm2 = new Vue({
       } else if (window.location.href === "http://146.185.134.55/residents/miaons/stories") {
         apiUrl = "OnsMia"
       }
+       
+      let url = window.location.href;
+      if(url.includes("ericengelen"))          apiUrl = "EricEngelen";
+      if(url.includes("georgetteveekmans"))    apiUrl = "GeorgetteVeekmans";
+      if(url.includes("rosemariedrouet"))      apiUrl = "RoseMarieDrouet";
+      if(url.includes("mariejoseemertens"))    apiUrl = "MarieJoséeMertens";
+      if(url.includes("rosaandries"))          apiUrl = "RosaAndries";
+      if(url.includes("louisadevos"))          apiUrl = "devos";
+      if(url.includes("feron"))                apiUrl = "Feron";
+      if(url.includes("magdawouters"))         apiUrl = "Wouters";
+      if(url.includes("irma"))                 apiUrl = "irmavanrossem";
+
       axios.get(
         "https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
           headers: {
             Authorization: "Bearer " + app_key
           }
         }
-      ).then(function (response) {
-        self.stories = response.data.records;
+        ).then(function (response) {
+          self.stories = response.data.records;
         // self.stories = [];
         const url = window.location.href;
         console.log(self.stories[0]['fields']['resident-name']);

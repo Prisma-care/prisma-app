@@ -10,7 +10,7 @@
 
   <title>Prisma – Geef meer kleur aan zorgverlening</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-albums">
 
  
 

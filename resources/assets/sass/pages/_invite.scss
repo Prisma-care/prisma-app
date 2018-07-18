@@ -12,10 +12,13 @@
     border-right: 1px solid black;
     float: left;
     width: 50%;
-    height: 94vh;
+    height: 98vh;
     background: white;
-    ;
+    overflow-y: scroll;
     position: fixed;
+    .container {
+      margin-bottom: 20px;
+    }
     .name {
       label {
         left: 1.8rem;
@@ -46,7 +49,7 @@
     left: 50%;
     background: white;
     width: 50%;
-    min-height: 98vh;
+    min-height: 89vh;
     overflow-y: hidden;
     .email-info,
     .email-template-header {

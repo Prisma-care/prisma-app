@@ -10,60 +10,60 @@
   :index="index"
   :options="{youTubePlayerVars: { showinfo: 0, rel: 0, autoplay: 1, modestbranding: 1 }, youTubeClickToPlay: false}"
   @close="index = null">
-  </gallery>
+</gallery>
 </div>
 
 <div 
 v-cloak
 class="container">
 
-  <div class="story-container">
+<div class="story-container">
 
-    {{-- Add stories --}}
-    @include('residents/_storyadd')
-    
-    {{-- Edit stories --}}
-    @include('residents/_storyedit')
+  {{-- Add stories --}}
+  @include('residents/_storyadd')
 
-    <button 
-    v-on:click="isAddStoryVisible = true" 
-    v-if="stories.length>0" 
-    id="addStoryBtn" 
-    data-toggle="modal" 
-    data-target="#addStoryModal" 
-    class="btn btn-primary btn-sm d-flex justify-content-center align-items-center mb-1 d-print-none" 
-    autofocus>
-    <i class="material-icons">add</i>Verhaal toevoegen
-  </button>
+  {{-- Edit stories --}}
+  @include('residents/_storyedit')
+
+  <button 
+  v-on:click="isAddStoryVisible = true" 
+  v-if="stories.length>0" 
+  id="addStoryBtn" 
+  data-toggle="modal" 
+  data-target="#addStoryModal" 
+  class="btn btn-primary btn-sm d-flex justify-content-center align-items-center mb-1 d-print-none" 
+  autofocus>
+  <i class="material-icons">add</i>Verhaal toevoegen
+</button>
 
 
-  {{-- Album overview --}}
+{{-- Album overview --}}
 
+<div 
+v-for="(albumstories, album) in albums" 
+v-if="stories.length>0">
+
+{{-- Stories --}}
+
+<div 
+class="story-category" 
+:id="album">
+
+<div class="story-category-header">
+  <h2>@{{ album }} </h2>
+</div>
+
+<div class="row">
   <div 
-  v-for="(albumstories, album) in albums" 
-  v-if="stories.length>0">
+  v-for="story in albumstories" 
+  class="story col-md-6 col-lg-4 d-print-none" 
+  v-bind:class="{checked: checkedStories.includes(story.id), 'd-print-block': checkedStories.includes(story.id)}">
 
-  {{-- Stories --}}
+  @include('residents/_story')
 
-    <div 
-      class="story-category" 
-      :id="album">
-      
-      <div class="story-category-header">
-        <h2>@{{ album }} </h2>
-      </div>
-
-      <div class="row">
-        <div 
-        v-for="story in albumstories" 
-        class="story col-md-6 col-lg-4 d-print-none" 
-        v-bind:class="{checked: checkedStories.includes(story.id), 'd-print-block': checkedStories.includes(story.id)}">
-
-        @include('residents/_story')
-
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 
 </div>
 
@@ -74,30 +74,44 @@ v-if="stories.length==0"
 v-cloak
 class="text-center d-print-none row">
 
-  <div class="col-md-8 mx-auto">
+<div class="col-md-8 col-lg-7 mx-auto">
 
-    <p class="lead lead-lg">Wie is Irma?</p>
-    <p>Help het Magnolia team om Irma te leren kennen aan de hand van verhalen over haar leven.</p>
+  <img src="/img/illustration/happyresident.png" alt="" class="img-fluid px-5">
 
+  <p class="lead lead-lg">Waar babbelt Lea graag over?</p>
+  <p>Help het Magnolia team om Lea te leren kennen aan de hand van verhalen over haar leven. Voeg foto's en video's toe die het personeel kunnen inspireren om een babbeltje te slaan.</p>
+
+  <p>
     <button 
     v-on:click="isAddStoryVisible = true" 
     data-toggle="modal" 
     data-target="#addStoryModal" 
     class="btn btn-primary btn-circle d-flex justify-content-center align-items-center mb-1 d-print-none mx-auto" 
     autofocus>
-    <i class="material-icons">add</i>Verhaal toevoegen
-    </button>
+    Verhaal toevoegen
+  </button>
+</p>
+<hr>
+<p class="lead lead-sm">
+  Weet je niet goed hoe je foto's kan toevoegen? Lees de <a href="https://prisma.care/helppagina/">tips om te starten</a> met Prisma of roep de hulp in van een familielid. 
+  
+</p> 
 
-    {{--         <a href="https://prisma.care/levensverhaal-posters/"><img src="https://prisma.care/wp-content/uploads/2018/05/prisma-poster-maken-pelgrims.jpg" alt="Poster maken" class="img-thumbnail"></a> --}}
+<a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a>
 
-    {{-- <a href="https://prisma.care/levensverhaal-posters/">Hoe maak je een poster?</a> --}}
 
-    <hr class="mt-4">
-    <h2 class="mb-3">Hulp van je familie</h2>
-    <p>Wie heeft er nog foto's van Irma, en kan de verhalen aanvullen? </p>
-    <p><a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a></p>
+{{--         <a href="https://prisma.care/levensverhaal-posters/"><img src="https://prisma.care/wp-content/uploads/2018/05/prisma-poster-maken-pelgrims.jpg" alt="Poster maken" class="img-thumbnail"></a> --}}
 
-  </div>
+{{-- <a href="https://prisma.care/levensverhaal-posters/">Hoe maak je een poster?</a> --}}
+{{-- 
+<hr class="mt-4">
+<img src="/img/illustration/collectfamily.png" alt="" class="img-fluid px-5">
+<h2 class="mb-3">Hulp van je familie</h2>
+<p>Wie heeft er nog foto's van Irma, en kan de verhalen aanvullen? </p>
+<p><a class="btn btn-light" href="{{ route('residents.family') }}">Nodig familie uit</a></p> --}}
+
+
+</div>
 </div>    
 
 

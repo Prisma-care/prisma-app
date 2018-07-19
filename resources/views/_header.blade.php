@@ -16,7 +16,7 @@
       <ul class="navbar-nav">
 
         <li class="nav-item"><a class=" verhalen nav-link {{ Route::currentRouteNamed('residents.stories') ? 'active' : '' }}" href="{{ route('residents.stories') }}">Verhalen</a></li>
-        <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.family') ? 'active' : '' }}" href="{{ route('residents.family') }}">Familie uitnodigen</a></li>
+        <li class="nav-item"><a class="nav-link {{ (Route::currentRouteNamed('residents.family') || Route::currentRouteNamed('residents.familyinvite') ) ? 'active' : '' }}" href="{{ route('residents.family') }}">Familie uitnodigen</a></li>
         {{-- <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.preferences') ? 'active' : '' }}" href="{{ route('residents.preferences') }}">Voorkeuren</a></li>
         <li class="nav-item"><a class="nav-link {{ Route::currentRouteNamed('residents.profile.edit') ? 'active' : '' }}" href="{{ route('residents.profile.edit') }}">Profiel</a></li> --}}
       </ul>

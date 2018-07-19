@@ -86,20 +86,15 @@ var app = new Vue({
     email: '',
     showAddFamily: false,
     step: 1,
-    example: {
-      general: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric',
-      digital: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric',
-      interview: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric',
-      search: 'Ik wil van oma al haar mooie herinneringen en verhalen vastleggen, zodat we haar leven mooi kunnen documenteren.\n      Om dit te doen is er een applicatie genaamd Prisma.\n      Heb je deze week ergens een halfuurtje om een verhaal met een foto toe te voegen?\n      Deze foto\'s kunnen van haar zelf zijn, maar je kan ook gerust een foto van het internet gebruiken.\n      Hieronder vind je een link naar een formulier waar je het verhaal kan toevoegen en de andere om het verhaal te bekijken op haar profiel.\n      Groetjes Cedric'
-    },
-    current_example: "general",
+    alert: false,
+    message: "",
+    example: '<p class="card-text">Met de familie verzamelen we verhalen van Lea die ik aan het rusthuis ga geven. Hiermee kan het personeel Lea dan beter leren kennen. </p>\n    <p class="card-text">Help je mee? Kan je deze week de tijd nemen om enkele belangrijke foto\'s te scannen?</p>',
     form: {
       firstname: "",
       lastname: "",
       email: "",
       subject: ""
     },
-    message: "",
     familyMembers: [{
       "id": 1,
       "name": "Georgette",
@@ -114,10 +109,12 @@ var app = new Vue({
       "numStories": 16
     }]
   },
-
   computed: {
     isValid: function isValid() {
       return (this.form.firstname !== "", this.form.lastname !== "", this.form.email !== "", this.form.subject !== "") ? false : "disabled";
+    },
+    isMessageFilled: function isMessageFilled() {
+      return this.message.length <= 5 ? false : "disabled";
     },
     isValidMessage: function isValidMessage() {
       return this.message !== "" && this.message.length >= 5 ? false : "disabled";
@@ -133,6 +130,22 @@ var app = new Vue({
     changeExample: function changeExample(e) {
       this.current_example = e.target.value;
       e.target.value.addClass;
+    },
+    fillMessage: function fillMessage() {
+      htmlMessage = this.example;
+      plainMessage = htmlMessage.replace(/<[^>]+>/g, '');
+      this.message = plainMessage;
+    },
+    send: function send() {
+      var _this = this;
+
+      this.form.lastname = "";
+      this.form.firstname = "";
+      this.form.email = "";
+      this.alert = true;
+      setTimeout(function () {
+        _this.alert = false;
+      }, 5000);
     }
   }
 });

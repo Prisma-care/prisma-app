@@ -41,5 +41,10 @@ class ResidentsController extends Controller
     {
       return view('residents.profile');
     }
+
+    public function storycreate()
+    {
+     return view('residents.storycreate'); 
+    }
       
 }

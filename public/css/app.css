@@ -11427,6 +11427,7 @@ body {
 
 .lead-sm {
   font-size: 1rem;
+  letter-spacing: -0.02rem;
 }
 
 h2 {
@@ -11446,7 +11447,8 @@ label {
   position: relative;
 }
 
-.form-group input.form-control {
+.form-group input.form-control,
+.form-group textarea.form-control {
   padding-top: 3rem;
   padding-bottom: 1rem;
   position: relative;

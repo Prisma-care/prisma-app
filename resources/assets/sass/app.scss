@@ -24,6 +24,7 @@ body {
   }
   &-sm {
     font-size: 1rem;
+    letter-spacing: -0.02rem;
   }
 }
 
@@ -42,7 +43,7 @@ label {
 
 .form-group {
   position: relative;
-  input.form-control {
+  input.form-control, textarea.form-control {
     padding-top: 3rem;
     padding-bottom: 1rem;
     position: relative;

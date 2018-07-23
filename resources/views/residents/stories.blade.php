@@ -79,7 +79,7 @@ class="text-center d-print-none row">
   <img src="/img/illustration/happyresident.png" alt="" class="img-fluid px-5">
 
   <p class="lead lead-lg">Waar babbelt Lea graag over?</p>
-  <p>Help het Magnolia team om Lea te leren kennen aan de hand van verhalen over haar leven. Voeg foto's en video's toe die het personeel kunnen inspireren om een babbeltje te slaan.</p>
+  <p>Help het Sint Monika team om Lea te leren kennen aan de hand van verhalen over haar leven. Voeg foto's en video's toe die het personeel kunnen inspireren om een babbeltje te slaan.</p>
 
   <p>
     <a href="{{ route('residents.storycreate') }}" 

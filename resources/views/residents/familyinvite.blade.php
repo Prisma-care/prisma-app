@@ -48,7 +48,7 @@
     </div>
     <div class="col-md-5">
       <div class="card bg-light border-light">
-        <div class="card-header"><h6 class="mb-0">Voorbeeld tekst</h6></div>
+        <div class="card-header"><h6 class="mb-0">Voorbeeld email tekst</h6></div>
 
         <div class="card-body">
 

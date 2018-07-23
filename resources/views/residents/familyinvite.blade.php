@@ -43,8 +43,8 @@
         rows="8"></textarea>
         <label for="lastname">Persoonlijke boodschap in email</label>
       </div>
-      
-      <p>In de email komt automatisch meer info onder je bericht over hoe Prisma werk. <a href="#">Bekijk email voorvertoning</a></p>
+
+      <p>In de email komt automatisch meer info onder je bericht over hoe Prisma werkt. <a href="#">Bekijk email voorvertoning</a></p>
 
       <button class="btn btn-primary btn-right" :disabled="isValidMessage">Verzend email</button>
       

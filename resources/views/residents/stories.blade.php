@@ -82,14 +82,10 @@ class="text-center d-print-none row">
   <p>Help het Magnolia team om Lea te leren kennen aan de hand van verhalen over haar leven. Voeg foto's en video's toe die het personeel kunnen inspireren om een babbeltje te slaan.</p>
 
   <p>
-    <button 
-    v-on:click="isAddStoryVisible = true" 
-    data-toggle="modal" 
-    data-target="#addStoryModal" 
-    class="btn btn-primary btn-circle d-flex justify-content-center align-items-center mb-1 d-print-none mx-auto" 
-    autofocus>
+    <a href="{{ route('residents.storycreate') }}" 
+    class="btn btn-primary mb-1 d-print-none mx-auto" >
     Verhaal toevoegen
-  </button>
+  </a>
 </p>
 <hr>
 <p class="lead lead-sm">

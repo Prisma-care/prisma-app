@@ -31,11 +31,26 @@
           </div>
         </div>
 
+
+        <div class="form-row">
+          <div class="col-4 col-lg-2">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="jjjj"> 
+              <label for="description">Jaartal</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <small>Optioneel</small>
+          </div>
+        </div>
+
+
         <div class="form-group">
           <textarea v-model="newStory" id="description" class="form-control" type="text" ref="storytext" placeholder="Vertel het verhaal beknopt" rows="3" autofocus></textarea>
           <label for="description">Beschrijving</label>
         </div>
 
+        
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center active" id="photoupload-tab" data-toggle="tab" href="#photoupload" role="tab" aria-controls="photoupload" aria-selected="true"><i class="material-icons mr-2">camera_alt</i> Foto opladen</a>
@@ -50,20 +65,18 @@
           {{-- Photo tab --}}
           <div class="tab-pane fade show active" id="photoupload" role="tabpanel" aria-labelledby="photoupload-tab">
 
-<div class="card bg-light">
-  <div class="card-body">
-    <p class="card-text">Klik, of sleep een foto naar hier om op te laden.</p>
-  </div>
-</div>
-
-            
+            <div class="card bg-light">
+              <div class="card-body">
+                <p class="card-text">Klik, of sleep een foto naar hier om op te laden.</p>
+              </div>
+            </div>
 
           </div>
 
           {{-- Youtube tab --}}
           <div class="tab-pane fade" id="youtubeadd" role="tabpanel" aria-labelledby="youtubeadd-tab">
-          
-           
+
+
           </div>
 
         </div>

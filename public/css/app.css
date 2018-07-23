@@ -11438,9 +11438,9 @@ h2 {
 }
 
 label {
-  font-size: .9rem;
+  font-size: .85rem;
   margin-top: 1.25rem;
-  color: #363943;
+  color: #828A99;
 }
 
 .form-group {
@@ -11449,11 +11449,14 @@ label {
 
 .form-group input.form-control,
 .form-group textarea.form-control {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
   position: relative;
-  padding-top: 1.75rem;
+  padding-top: 2rem;
   padding-bottom: .5rem;
+}
+
+.form-group input.form-control:focus + label,
+.form-group textarea.form-control:focus + label {
+  color: #637DC8;
 }
 
 .form-group label {
@@ -11462,8 +11465,6 @@ label {
   left: .8rem;
   max-height: 1rem;
   margin: 0;
-  font-weight: 800;
-  font-size: .8rem;
 }
 
 a:hover {

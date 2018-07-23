@@ -36,19 +36,20 @@ h2 {
 }
 
 label {
-  font-size: .9rem;
+  font-size: .85rem;
   margin-top: 1.25rem;
-  color: $gray-800;
+  color: $gray-600;
 }
 
 .form-group {
   position: relative;
   input.form-control, textarea.form-control {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
     position: relative;
-    padding-top: 1.75rem;
+    padding-top: 2rem;
     padding-bottom: .5rem;
+    &:focus + label {
+      color: $blue;
+    }
   }
   label {
     position: absolute;
@@ -56,8 +57,6 @@ label {
     left: .8rem;
     max-height: 1rem;
     margin: 0;
-    font-weight: 800;
-    font-size: .8rem;
   }
 }
 

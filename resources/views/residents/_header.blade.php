@@ -1,8 +1,8 @@
 <div class="resi-header d-print-none">
 
-  <!--<img src="/img/tmp/profile_5.jpg" class="rounded-circle" alt="Charles Feron">-->
-  <!-- <h1 class="resi-header-displayname">Mr Feron</h1>-->
-  <h1 class="resi-header-displayname">@{{resident_name[0]}}</h1>
+  <img src="/img/tmp/profile_rolandvanderlinden.jpg" class="rounded-circle" alt="Roland Vander linden">
+  <h1 class="resi-header-displayname">Roel</h1>
+  <h2 class="resi-header-fullname">@{{resident_name[0]}}</h2>
 
 </div>
 

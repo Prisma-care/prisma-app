@@ -25,16 +25,13 @@ class="container">
   {{-- Edit stories --}}
   @include('residents/_storyedit')
 
-  <button 
-  v-on:click="isAddStoryVisible = true" 
-  v-if="stories.length>0" 
-  id="addStoryBtn" 
-  data-toggle="modal" 
-  data-target="#addStoryModal" 
-  class="btn btn-primary btn-sm d-flex justify-content-center align-items-center mb-1 d-print-none" 
-  autofocus>
-  <i class="material-icons">add</i>Verhaal toevoegen
-</button>
+  <a 
+  href="{{ route('residents.storycreate') }}" 
+  id="addStoryBtn"
+  class="btn btn-primary btn-sm d-flex justify-content-center align-items-center mb-1 d-print-none">
+  Verhaal toevoegen
+</a>
+
 
 
 {{-- Album overview --}}
@@ -72,7 +69,7 @@ class="story-category"
 <div 
 v-if="stories.length==0"
 v-cloak
-class="text-center d-print-none row">
+class="d-none text-center d-print-none row">
 
 <div class="col-md-8 col-lg-7 mx-auto">
 

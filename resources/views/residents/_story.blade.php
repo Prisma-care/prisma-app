@@ -41,20 +41,20 @@ class="mt-3">@{{ story['fields']['Notes'] }}</p>
 </div>
 
 {{-- CTA's --}}
-<div v-if="story['fields']['Notes'] && !story['fields']['thumbnail']">
+{{-- <div v-if="story['fields']['Notes'] && !story['fields']['thumbnail']">
   <button
   data-toggle="modal"
   data-target="#editStoryModal"
-  class="btn btn-add d-flex justify-content-center align-items-center mb-2">
+  class="btn btn-add d-flex justify-content-center align-items-center mb-2 d-print-none">
   <i class="material-icons md-18 mr-2">add_photo_alternate</i> <span>Voeg beeld toe <em>TODO</em></span>
 </button>
 </div>
-
+ --}}
 <div v-if="story['fields']['Notes']">
   <button
   data-toggle="modal"
   data-target="#editStoryModal"
-  class="btn btn-edit d-flex justify-content-center align-items-center">
+  class="btn btn-edit d-flex justify-content-center align-items-center d-print-none">
   <i class="material-icons md-18 mr-2">edit</i> <span>Pas tekst aan</span>
 </button>
 </div>
@@ -63,7 +63,7 @@ class="mt-3">@{{ story['fields']['Notes'] }}</p>
   <button
   data-toggle="modal"
   data-target="#editStoryModal"
-  class="btn btn-add d-flex justify-content-center align-items-center">
+  class="btn btn-add d-flex justify-content-center align-items-center d-print-none">
   <i class="material-icons md-18 mr-2">edit</i> <span>Voeg tekst toe</span>
 </button>
 </div>

@@ -3,13 +3,13 @@
 @section ('content')
 
 @php 
-$residents = ['Lea', 'Monsieur Masure', 'Madame Briard', 'Luc', 'Mr Feron', 'Felix', 'Madame De Vooght', 'Madame Pelgrims'];
+$residents = ['Lea', 'Monsieur Masure', 'Madame Briard', 'Luc', 'Mr Feron', 'Felix', 'Madame De Vooght', 'Madame Pelgrims', 'Roel'];
 @endphp
 
-<div class="container">
+<div class="container mt-4">
   <div class="row">
 
-    @for ($i = 0; $i < 8; $i++)
+    @for ($i = 0; $i < 9; $i++)
 
     <div class="col-6 col-md-4 col-lg-3">
       <a href="{{ route('residents.show') }}">

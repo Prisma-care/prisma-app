@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="col-6">
-            <a href="#" class="mt-2 small d-flex align-items-center"><i class="material-icons md-18">chat</i> Vragen over {chosensubject}</a>
+            {{-- <a href="#" class="mt-2 small d-flex align-items-center"><i class="material-icons md-18">chat</i> Vragen over {chosensubject}</a> --}}
           </div>
         </div>
 

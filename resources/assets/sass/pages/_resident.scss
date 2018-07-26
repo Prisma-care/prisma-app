@@ -54,9 +54,12 @@
 
 .resi-header {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -3rem;
+
   img {
     height: 100px;
+    z-index: 99;
+    position: relative;
   }
   &-displayname {
     margin-top: .5rem;
@@ -65,7 +68,6 @@
     margin: .5rem 0 2rem;
     font-weight: 300;
     color: $gray-500;
-    font-size: .8rem;
     font-family: $font-family-sans-serif;
   }
   &-actions {

@@ -162,6 +162,8 @@ var vm2 = new Vue({
       if (url.includes("feron")) apiUrl = "Feron";
       if (url.includes("magdawouters")) apiUrl = "Wouters";
       if (url.includes("irma")) apiUrl = "irmavanrossem";
+      if (url.includes("lea")) apiUrl = "lea";
+      if (url.includes("rolandvanderlinden")) apiUrl = "rolandvanderlinden";
 
       axios.get("https://api.airtable.com/v0/" + app_id + "/story?view=" + apiUrl, {
         headers: {

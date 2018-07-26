@@ -10629,11 +10629,13 @@ nav.navbar .dropdown-toggle {
 
 .resi-header {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -3rem;
 }
 
 .resi-header img {
   height: 100px;
+  z-index: 99;
+  position: relative;
 }
 
 .resi-header-displayname {
@@ -10644,7 +10646,6 @@ nav.navbar .dropdown-toggle {
   margin: .5rem 0 2rem;
   font-weight: 300;
   color: #ABAEB4;
-  font-size: .8rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -11419,6 +11420,7 @@ body {
   font-weight: 200;
   color: #ABAEB4;
   line-height: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .lead-lg {
@@ -11445,6 +11447,7 @@ label {
 
 .form-group {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .form-group input.form-control,

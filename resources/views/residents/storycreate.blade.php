@@ -65,9 +65,10 @@
           {{-- Photo tab --}}
           <div class="tab-pane fade show active" id="photoupload" role="tabpanel" aria-labelledby="photoupload-tab">
 
-            <div class="card bg-light">
-              <div class="card-body">
-                <p class="card-text">Klik, of sleep een foto naar hier om op te laden.</p>
+            <div class="card bg-light w-25">
+              <div class="card-body text-center">
+                <i class="material-icons md-64 text-muted">cloud_upload</i>
+                <p class="card-text"> Klik, of sleep een foto naar hier om op te laden.</p>
               </div>
             </div>
 
@@ -75,6 +76,8 @@
 
           {{-- Youtube tab --}}
           <div class="tab-pane fade" id="youtubeadd" role="tabpanel" aria-labelledby="youtubeadd-tab">
+            <p>Ga naar <a href="http://youtube.com/" target="_blank">YouTube</a> en plak de link van de pagina hier onder.</p>
+            <div class="form-group __web-inspector-hide-shortcut__"><input name="regex" type="text" placeholder="https://www.youtube.com/watch?v=ffSnk4v3aeg" class="form-control" aria-required="true" aria-invalid="true"><label for="youtube">YouTube link</label></div>
 
 
           </div>

@@ -7,6 +7,8 @@
 <p align="center">It connects with the residents that they take care of <br>
 by getting to know the residents via their life stories.</p>
 
+<p align="center">This repository is the prototype we used to test functionality in care homes. It's read-only and connects to dummy content in an Airtable database. Soon this prototype will become obsolete, as we're building the working service in the prisma-vue repository.</p>
+
 ---
 
 ## Getting Started
